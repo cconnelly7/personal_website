@@ -1,10 +1,121 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.black-column {
+  background-color: white;
+  flex-basis: 9%;
+  height: 100vh;
+}
+
+.green-column {
+  background-color: green;
+  flex-basis: 22%;
+  height: 100hv;
+}
+
+.content-column {
+  background-color: gray;
+  flex-basis: 60%;
+  height: 100hv;
+}
+
+/* BUTTONS */
+/*Button wrap*/
+.hover_effect {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: block;
+  width: 100%;
+  padding: 1px;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  color: #2C3E50;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 5em;
+  font-weight: 600;
+  -webkit-user-select: none;
+-webkit-touch-callout: none;  
+}
+
+.hover_effect:after {
+  content: "";
+  height: 5px;
+  left: 0;
+  width: 1px;
+  position: absolute;
+  -webkit-transition: width 1s ease, background-color 1s ease;
+  -moz-transition: width 1s ease, background-color 1s ease;;
+  -ms-transition: width 1s ease, background-color 1s ease;;
+  -o-transition: width 1s ease, background-color 1s ease;;
+  transition: width 1s ease, background-color 1s ease;;
+  right: 0;
+  margin: 0 auto;
+}
+
+.hover_effect:hover {
+  color: #fff;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -ms-transition: color 1s ease;
+  -o-transition: color 1s ease;
+  transition: color 1s ease;
+  cursor: pointer;
+}
+
+.hover_effect:hover:after, 
+.hover_effect:focus:after{
+  width: 100%;
+  background-color: #fff;
+}
+
+.ua {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #fff;
+  font-size: 2em;
+}
+
+.fa {
+  color: #2C3E50;
+    -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -ms-transition: all 1s ease;
+   -o-transition: all 1s ease;
+   transition: all 1s ease;
+}
+
+.ua:hover .fa {
+   color:#2C3E50;
+   -webkit-transform: scale(1.5);
+   -moz-transform: scale(1.5);
+   -ms-transform: scale(1.5);
+   -o-transform: scale(1.5);
+   transform: scale(1.5);
+   -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -ms-transition: all 1s ease;
+   -o-transition: all 1s ease;
+   transition: all 1s ease;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,14 +125,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  
   display: flex;
-  flex-direction: column;
+  flex: 1;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
 }
 
 .App-link {
