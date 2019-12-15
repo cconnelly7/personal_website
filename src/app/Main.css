@@ -1,7 +1,8 @@
 .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    background-color: antiquewhite;
+    /* flex-direction: row;
+    position:relative;
+    flex-wrap: wrap; */
     width: 100%;
   }
   
@@ -12,23 +13,36 @@
     flex: 1;
   }
   
-  .black-column {
+  .white-column {
     background-color: white;
-    flex-basis: 9%;
-    height: 100vh;
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  /* .green-column-container {
+    background-color: brown;
+    flex-basis: 22%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  } */
   
   .green-column {
     background-color: green;
-    flex-basis: 22%;
+    padding: 8px;
     height: 100vh;
-    position: relative;
+    position: fixed;
   }
   
   .content-column {
     background-color: gray;
-    flex-basis: 60%;
     height: 100%;
+    width:100%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    /* position: right; */
   }
   
   /* BUTTONS */
