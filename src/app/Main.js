@@ -4,6 +4,9 @@ import ContentPanel from './ContentPanel';
 import PanelA from './PanelA';
 import PanelB from './PanelB';
 import PanelC from './PanelC';
+import PanelD from './PanelD';
+import PanelE from './PanelE';
+import PanelF from './PanelF';
 
 class Main extends React.Component {
     constructor(props) {
@@ -11,6 +14,9 @@ class Main extends React.Component {
         this.refA = React.createRef();
         this.refB = React.createRef();
         this.refC = React.createRef();
+        this.refD = React.createRef();
+        this.refE = React.createRef();
+        this.refF = React.createRef();
     }
     render () {
         return (
@@ -28,21 +34,36 @@ class Main extends React.Component {
                             console.log(this.refB.current.offsetTop)
                             // window.scroll({top: this.refB.current.offsetTop, behavior: 'smooth'});
                             this.refB.current.scrollIntoView({behavior:'smooth'})
-                        }}>Bio</button>
+                        }}>About Me</button>
                         <button className="main-paragraph hover_effect"onClick={()=>{
                             console.log(this.refC)
                             console.log(this.refC.current.offsetTop)
                             this.refC.current.scrollIntoView({behavior:'smooth'})
                         }}>Resume</button>
-                        <p className="main-paragraph hover_effect">Skills</p>
-                        <p className="main-paragraph hover_effect">Projects</p>
-                        <p className="main-paragraph hover_effect">Contact</p>
+                        <button className="main-paragraph hover_effect"onClick={()=>{
+                            console.log(this.refD)
+                            console.log(this.refD.current.offsetTop)
+                            this.refD.current.scrollIntoView({behavior:'smooth'})
+                        }}>Skills</button>
+                        <button className="main-paragraph hover_effect"onClick={()=>{
+                            console.log(this.refE)
+                            console.log(this.refE.current.offsetTop)
+                            this.refE.current.scrollIntoView({behavior:'smooth'})
+                        }}>Projects</button>
+                        <button className="main-paragraph hover_effect"onClick={()=>{
+                            console.log(this.refF)
+                            console.log(this.refF.current.offsetTop)
+                            this.refF.current.scrollIntoView({behavior:'smooth'})
+                        }}>Contact</button>
                     </div>
                     <div className='content-column'>
                     <ContentPanel >
                         <PanelA ref={this.refA} />
                         <PanelB ref={this.refB} />
                         <PanelC ref={this.refC} />
+                        <PanelD ref={this.refD} />
+                        <PanelE ref={this.refE} />
+                        <PanelF ref={this.refF} />
                     </ContentPanel>
                     </div>
                 </div>
