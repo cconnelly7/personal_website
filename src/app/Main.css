@@ -40,8 +40,7 @@
     /* position: right; */
   }
   
-  /* BUTTONS */
-
+  /* BUTTON */
   .btn {
     background: none;
     border: none;
@@ -52,12 +51,21 @@
     color: black;
     cursor: pointer;
     margin: auto;
+
+    -webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+  }
+  .btn:hover {
+    color: lightgreen;
+    -webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
   }
   .btn:after {
     content: '';
     width: 0; /*set width to 0 initially, so animates from nothing */
     height: 2px; /*height of underline*/
-    color: lightgreen;
     background: lightgreen;
     display: block; 
     /* animation settings
@@ -82,140 +90,3 @@
     /* position: relative; */
     position: absolute;
   }
-
-
-
-
-
-
-  /* .button-underline {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    position: relative;
-    color: black;
-    text-decoration:none;
-  }
-  .button-underline:after {
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 3px;
-    background-color: black;
-    content: "";
-    -webkit-transition: width 0.5s;
-    transition: width 0.5s;
-  }
-  .button-underline:before {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: -5px;
-    width: 0;
-    height: 3px;
-    background-color: black;
-    content: "";
-    -webkit-transition: width 0.5s;
-    transition: width 0.5s;
-  }
-  .button-underline:hover:after,.button-underline:hover:before {
-    width: 100%;
-  } */
-  
-
-
-
-
-
-
-
-
-  /* .button {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-  }
-  .hover_effect {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    display: block;
-    width: 100%;
-    padding: 1px;
-    position: relative;
-    z-index: 2;
-    text-decoration: none;
-    color: #2C3E50;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    font-size: 2em;
-    font-weight: 600;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;  
-  }
-  
-  .hover_effect:after {
-    content: "";
-    height: 5px;
-    left: 0;
-    width: 1px;
-    position: absolute;
-    -webkit-transition: width 1s ease, background-color 1s ease;
-    -moz-transition: width 1s ease, background-color 1s ease;;
-    -ms-transition: width 1s ease, background-color 1s ease;;
-    -o-transition: width 1s ease, background-color 1s ease;;
-    transition: width 1s ease, background-color 1s ease;;
-    right: 0;
-    margin: 0 auto;
-  }
-  
-  .hover_effect:hover {
-    color: #fff;
-    -webkit-transition: color 1s ease;
-    -moz-transition: color 1s ease;
-    -ms-transition: color 1s ease;
-    -o-transition: color 1s ease;
-    transition: color 1s ease;
-    cursor: pointer;
-  }
-  
-  .hover_effect:hover:after, 
-  .hover_effect:focus:after{
-    width: 100%;
-    background-color: #fff;
-  }
-  
-  .ua {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    color: #fff;
-    font-size: 2em;
-  }
-  
-  .fa {
-    color: #2C3E50;
-      -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-     -ms-transition: all 1s ease;
-     -o-transition: all 1s ease;
-     transition: all 1s ease;
-  }
-  
-  .ua:hover .fa {
-     color:#2C3E50;
-     -webkit-transform: scale(1.5);
-     -moz-transform: scale(1.5);
-     -ms-transform: scale(1.5);
-     -o-transform: scale(1.5);
-     transform: scale(1.5);
-     -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-     -ms-transition: all 1s ease;
-     -o-transition: all 1s ease;
-     transition: all 1s ease;
-  } */
