@@ -25,6 +25,8 @@ class Main extends React.Component {
                 {/*<div className='green-column-container'> */}
                     <div className='nav-column'>
                         <div class="circleBase type1"></div>
+                        <h1 class="name">Chianne Connelly</h1>
+                        <h1 class="job">Software Engineer</h1>
                         <button className="btn after-from-center"onClick={()=>{
                             console.log(this.refA)
                             console.log(this.refA.current.offsetTop)
