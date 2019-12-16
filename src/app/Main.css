@@ -27,6 +27,7 @@
     height: 100vh;
     position: fixed;
     width:10%;
+    
   }
   
   .content-column {
@@ -42,29 +43,23 @@
   /* BUTTONS */
 
   .btn {
-    /* remove default button / link styling first */
     background: none;
     border: none;
     outline: none;
     text-decoration: none;
-    
-    /* style as you want here */
-    font-size: 25px;
-    color: #C74066;
+    display: block;
+    font-size: 14px;
+    color: black;
     cursor: pointer;
-    
-    /* center inside the flex container */
     margin: auto;
   }
   .btn:after {
     content: '';
     width: 0; /*set width to 0 initially, so animates from nothing */
-    height: 1px; /*height of underline*/
-    background: #C74066;
-    
-    /* send underneath */
+    height: 2px; /*height of underline*/
+    color: lightgreen;
+    background: lightgreen;
     display: block; 
-    
     /* animation settings
     0.2s duration, 0.1s delay, with easing */
     transition: width 0.2s 0.1s ease-in-out; 
