@@ -1,92 +1,113 @@
 .row {
-    background-color: antiquewhite;
-    /* flex-direction: row;
-    position:relative;
-    flex-wrap: wrap; */
-    width: 100%;
-  }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-  }
-  
-  .white-column {
-    background-color: white;
-    width: 98%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .green-column {
-    float: left;
-    background-color: green;
-    height: 100vh;
-    position: fixed;
-    width:10%;
-    
-  }
-  
-  .content-column {
-    float: right;
-    background-color: gray;
-    height: 100%;
-    width:90%;
-    overflow: scroll;
-    scroll-behavior: smooth;
-    /* position: right; */
-  }
-  
-  /* BUTTON */
-  .btn {
-    background: none;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    color: black;
-    cursor: pointer;
-    margin: auto;
+  background-color: #e8ecef;
+  /* flex-direction: row;
+  position:relative;
+  flex-wrap: wrap; */
+  width: 100%;
+}
 
-    -webkit-transition: all ease 0.5s;
-	-moz-transition: all ease 0.5s;
-	transition: all ease 0.5s;
-  }
-  .btn:hover {
-    color: lightgreen;
-    -webkit-transition: all ease 0.5s;
-	-moz-transition: all ease 0.5s;
-	transition: all ease 0.5s;
-  }
-  .btn:after {
-    content: '';
-    width: 0; /*set width to 0 initially, so animates from nothing */
-    height: 2px; /*height of underline*/
-    background: lightgreen;
-    display: block; 
-    /* animation settings
-    0.2s duration, 0.1s delay, with easing */
-    transition: width 0.2s 0.1s ease-in-out; 
-  }
-  .btn:hover:after {
-      /* whatever width you want the underline to animate to */
-      width: 100%; 
-  }
-  
-  .after-from-center:after {   
-    /* center the underline
-    so animation will occur from the center.
-    remove this class if you want animation from the left instead */
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .constrain-after:after {
-    /* position: relative; */
-    position: absolute;
-  }
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.white-column {
+  background-color: white;
+  width: 95%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-column {
+  float: left;
+  background-color: #d1d5d9;
+  height: 100vh;
+  position: fixed;
+  width:20%;
+  min-width: 80px;
+  max-width: 500px;
+}
+
+.content-column {
+  float: right;
+  height: 100%;
+  width:80%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  /* position: right; */
+}
+
+/* CIRCLE WITH PIC */
+.circleBase {
+  border-radius: 50%;
+  margin: auto;
+}
+
+.type1 {
+  width: 60%;
+  padding-top: 60%;
+  position: relative;
+  background-image: url('./Assets/profPic.jpg');
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  /* border: 3px solid whitesmoke; */
+}
+
+.profPic {
+  width: 100%;
+}
+
+/* BUTTON */
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+  margin: auto;
+
+  -webkit-transition: all ease 0.5s;
+-moz-transition: all ease 0.5s;
+transition: all ease 0.5s;
+}
+.btn:hover {
+  color: #305f33;
+  -webkit-transition: all ease 0.5s;
+-moz-transition: all ease 0.5s;
+transition: all ease 0.5s;
+}
+.btn:after {
+  content: '';
+  width: 0; /*set width to 0 initially, so animates from nothing */
+  height: 2px; /*height of underline*/
+  background: #305f33;
+  display: block; 
+  /* animation settings
+  0.2s duration, 0.1s delay, with easing */
+  transition: width 0.2s 0.1s ease-in-out; 
+}
+.btn:hover:after {
+    /* whatever width you want the underline to animate to */
+    width: 100%; 
+}
+
+.after-from-center:after {   
+  /* center the underline
+  so animation will occur from the center.
+  remove this class if you want animation from the left instead */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.constrain-after:after {
+  /* position: relative; */
+  position: absolute;
+}
