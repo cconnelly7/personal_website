@@ -1,8 +1,5 @@
 .row {
   background-color: #e8ecef;
-  /* flex-direction: row;
-  position:relative;
-  flex-wrap: wrap; */
   width: 100%;
 }
 
@@ -14,7 +11,8 @@
 }
 
 .white-column {
-  background-color: white;
+  background-color: #e8ecef;
+  display: inline-block;
   width: 95%;
   height: 100%;
   margin-left: auto;
@@ -80,8 +78,8 @@ transition: all ease 0.5s;
 .btn:hover {
   color: #305f33;
   -webkit-transition: all ease 0.5s;
--moz-transition: all ease 0.5s;
-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 .btn:after {
   content: '';
@@ -111,3 +109,4 @@ transition: all ease 0.5s;
   /* position: relative; */
   position: absolute;
 }
+
