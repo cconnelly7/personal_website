@@ -20,34 +20,132 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  /* .green-column-container {
-    background-color: brown;
-    flex-basis: 22%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-  } */
   
   .green-column {
+    float: left;
     background-color: green;
-    padding: 8px;
     height: 100vh;
     position: fixed;
+    width:10%;
   }
   
   .content-column {
+    float: right;
     background-color: gray;
     height: 100%;
-    width:100%;
+    width:90%;
     overflow: scroll;
     scroll-behavior: smooth;
     /* position: right; */
   }
   
   /* BUTTONS */
-  /*Button wrap*/
+
+  .btn {
+    /* remove default button / link styling first */
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    
+    /* style as you want here */
+    font-size: 25px;
+    color: #C74066;
+    cursor: pointer;
+    
+    /* center inside the flex container */
+    margin: auto;
+  }
+  .btn:after {
+    content: '';
+    width: 0; /*set width to 0 initially, so animates from nothing */
+    height: 1px; /*height of underline*/
+    background: #C74066;
+    
+    /* send underneath */
+    display: block; 
+    
+    /* animation settings
+    0.2s duration, 0.1s delay, with easing */
+    transition: width 0.2s 0.1s ease-in-out; 
+  }
+  .btn:hover:after {
+      /* whatever width you want the underline to animate to */
+      width: 100%; 
+  }
+  
+  .after-from-center:after {   
+    /* center the underline
+    so animation will occur from the center.
+    remove this class if you want animation from the left instead */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .constrain-after:after {
+    /* position: relative; */
+    position: absolute;
+  }
+
+
+
+
+
+
+  /* .button-underline {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    position: relative;
+    color: black;
+    text-decoration:none;
+  }
+  .button-underline:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: black;
+    content: "";
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+  .button-underline:before {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    width: 0;
+    height: 3px;
+    background-color: black;
+    content: "";
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+  .button-underline:hover:after,.button-underline:hover:before {
+    width: 100%;
+  } */
+  
+
+
+
+
+
+
+
+
+  /* .button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+  }
   .hover_effect {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     display: block;
     width: 100%;
@@ -125,4 +223,4 @@
      -ms-transition: all 1s ease;
      -o-transition: all 1s ease;
      transition: all 1s ease;
-  }
+  } */
