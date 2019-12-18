@@ -6,6 +6,7 @@ class HomeScreen extends React.Component {
     render() {
         setInterval(function() {
             $('h2').fadeOut(500, function() {
+                
                 var $this = $(this);
                 $this.text($this.text() == 'I am a' ? 'Hello!' : 'I am a');  
                 $this.toggleClass('header fade-up header fade-up1');         
@@ -13,7 +14,7 @@ class HomeScreen extends React.Component {
             });
             $('h3').fadeOut(500, function() {
                 var $this = $(this);
-                $this.text($this.text() == 'Software Engineer' ? 'I\m Chianne' : 'Software Engineer');   
+                $this.text($this.text() == 'Software Engineer' ? 'I\'m Chianne' : 'Software Engineer');   
                 $this.toggleClass('header fade-up header fade-up1');     
                 $this.fadeIn(500);
             });
@@ -23,7 +24,7 @@ class HomeScreen extends React.Component {
                 $this.fadeIn(500);
             });
 
-        }, 5000);
+        }, 4500);
         return (
             <div>
                 <a className='box' ref={this.props.myref}>

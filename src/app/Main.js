@@ -2,8 +2,7 @@ import React from 'react';
 import './Main.css';
 import ContentPanel from './ContentPanel';
 import HomeScreen from './Home';
-import HomeScreen1 from './Home1';
-import PanelB from './PanelB';
+import AboutMe from './AboutMe';
 import PanelC from './PanelC';
 import PanelD from './PanelD';
 import PanelE from './PanelE';
@@ -19,6 +18,7 @@ class Main extends React.Component {
         this.refD = React.createRef();
         this.refE = React.createRef();
         this.refF = React.createRef();
+        this.refG = React.createRef();
     }
     render () {
         return (
@@ -44,32 +44,37 @@ class Main extends React.Component {
                             console.log(this.refC)
                             console.log(this.refC.current.offsetTop)
                             this.refC.current.scrollIntoView({behavior:'smooth'})
-                        }}>Resume</button>
+                        }}>Skills</button>
                         <button className="btn after-from-center"onClick={()=>{
                             console.log(this.refD)
                             console.log(this.refD.current.offsetTop)
                             this.refD.current.scrollIntoView({behavior:'smooth'})
-                        }}>Skills</button>
+                        }}>Projects</button>
                         <button className="btn after-from-center"onClick={()=>{
                             console.log(this.refE)
                             console.log(this.refE.current.offsetTop)
                             this.refE.current.scrollIntoView({behavior:'smooth'})
-                        }}>Projects</button>
+                        }}>Resume</button>
                         <button className="btn after-from-center"onClick={()=>{
                             console.log(this.refF)
                             console.log(this.refF.current.offsetTop)
                             this.refF.current.scrollIntoView({behavior:'smooth'})
+                        }}>Blog</button>
+                        <button className="btn after-from-center"onClick={()=>{
+                            console.log(this.refG)
+                            console.log(this.refG.current.offsetTop)
+                            this.refG.current.scrollIntoView({behavior:'smooth'})
                         }}>Contact</button>
                     </div>
                     <div className='content-column'>
                     <ContentPanel >
-                        <HomeScreen id='div1' ref={this.refA} />
-                        {/* <HomeScreen1 id='div2' ref={this.refA} /> */}
-                        <PanelB ref={this.refB} />
+                        <HomeScreen ref={this.refA} />
+                        <AboutMe ref={this.refB} />
                         <PanelC ref={this.refC} />
                         <PanelD ref={this.refD} />
                         <PanelE ref={this.refE} />
                         <PanelF ref={this.refF} />
+                        <PanelC ref={this.refG} />
                     </ContentPanel>
                     </div>
                 </div>
