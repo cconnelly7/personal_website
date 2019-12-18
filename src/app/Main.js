@@ -1,12 +1,14 @@
 import React from 'react';
 import './Main.css';
 import ContentPanel from './ContentPanel';
-import PanelA from './PanelA';
+import HomeScreen from './Home';
+import HomeScreen1 from './Home1';
 import PanelB from './PanelB';
 import PanelC from './PanelC';
 import PanelD from './PanelD';
 import PanelE from './PanelE';
 import PanelF from './PanelF';
+import $ from 'jquery';
 
 class Main extends React.Component {
     constructor(props) {
@@ -61,7 +63,8 @@ class Main extends React.Component {
                     </div>
                     <div className='content-column'>
                     <ContentPanel >
-                        <PanelA ref={this.refA} />
+                        <HomeScreen id='div1' ref={this.refA} />
+                        {/* <HomeScreen1 id='div2' ref={this.refA} /> */}
                         <PanelB ref={this.refB} />
                         <PanelC ref={this.refC} />
                         <PanelD ref={this.refD} />

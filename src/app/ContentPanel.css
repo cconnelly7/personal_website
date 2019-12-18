@@ -12,24 +12,13 @@
     flex: 1;
 }
 
-.box {
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    background-image: url('./Assets/websitePic.0.jpg');
-    background-position:50% 50%;
-    background-repeat:no-repeat;
-    background-size: cover;
-}
-
 .box2 {
     display: flex;
     width: 100%;
     height: 100vh;
-    background-color: white;
+    background-color: #e8ecef;
+    align-items: center;
+    justify-content: center;
 }
 
 .box3 {
@@ -38,38 +27,4 @@
     height: 100vh;
     background-color: purple;
 }
-
-/* Animation translate up */
-
-@keyframes fade-up {
-    0% {
-      opacity: 0;
-      transform: translateY(3em);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .fade-up {
-    animation: fade-up 4s cubic-bezier(.05,.98,.17,.97) forwards;
-    margin-left: 4%;
-    margin-bottom: 0%;
-    margin-top: 2%;
-    width: 42%;
-    font-family: 'Anton', sans-serif;
-    font-size: 64px;
-    text-align: left;
-  }
-  
-  .header.fade-up {
-    opacity: 0;
-    animation-delay: 0.2s;
-  }
-  
-  .text.fade-up {
-    opacity: 0;
-    animation-delay: 0.4s;
-  }
   
