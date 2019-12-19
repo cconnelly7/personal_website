@@ -1,31 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Main from './app/Main';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Project1 from './app/Project1';
 
-function App() {
-  return (
-    <div className="App">
-       <Main ></Main>
-    </div>
-  );
-}
+class App extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  componentDidMount(){
+    AOS.init({
+      duration : 2000
+    })
+  }
+  render(){
+    return(
+      <Router>
+      <div>
+        <nav>
+          <div className="App">
+            <Link to="/"></Link>
+          </div>
+        </nav>
+        <Switch>
+          <Route path="/project1">
+            <Project1 />
+          </Route>
+          <Route path="/">
+            <Main></Main>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+    )
+  }
+};
 
 export default App;
-
-
-// <header className="App-header">
-//         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-//         <div id="rectangle"></div>
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
