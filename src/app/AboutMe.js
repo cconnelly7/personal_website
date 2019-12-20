@@ -7,7 +7,7 @@ const AboutMe = React.forwardRef((props, ref)=>{
         <div height='100vh'>
         <div className='box2' ref={ref}>
             <div className='content'>
-                <div className='aboutMe'>About Me</div>
+                <div data-aos='fade-in' className='aboutMe'>About Me</div>
                 <div className='whiteSpace'></div>
             </div>
             
@@ -21,8 +21,8 @@ const AboutMe = React.forwardRef((props, ref)=>{
                 {/* <div data-id="1" data-aos="fade-up"> */}
                 <div className="wrapper">
                     <div className="h_iframe">
-                        <img className="ratio" src="http://placehold.it/16x9" />
-                        <iframe src="https://www.youtube.com/embed/Nm_f_44ZgLM" frameBorder="0" allowFullScreen></iframe>
+                        <img data-aos='fade-down' className="ratio" src="http://placehold.it/16x9" />
+                        <iframe data-aos='fade-down' src="https://www.youtube.com/embed/Nm_f_44ZgLM" frameBorder="0" allowFullScreen></iframe>
                     </div>
                 </div>
                 {/* </div> */}

@@ -7,7 +7,7 @@ import PanelC from './PanelC';
 import PanelD from './PanelD';
 import PanelE from './PanelE';
 import PanelF from './PanelF';
-import PanelG from './PanelG';
+import Contact from './Contact';
 
 class Main extends React.Component {
     constructor(props) {
@@ -28,7 +28,7 @@ class Main extends React.Component {
                 <div className='white-column'>
                     <div className='nav-column'>
                         <div className="circleBase type1"></div>
-                        <h1 className="name">Chianne Connelly</h1>
+                        <div className="name">Chianne Connelly</div>
                         <h1 className="job">Software Engineer</h1>
                         <button id='0' className={this.btnStyle} onClick={()=>{
                             this.ref0.current.scrollIntoView({behavior:'smooth'})
@@ -61,7 +61,7 @@ class Main extends React.Component {
                         <PanelD ref={this.ref3} />
                         <PanelE ref={this.ref4} />
                         <PanelF ref={this.ref5} />
-                        <PanelG ref={this.ref6} />
+                        <Contact ref={this.ref6} />
                     </ContentPanel>
                     </div>
                 </div>
