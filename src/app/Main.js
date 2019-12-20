@@ -7,6 +7,7 @@ import PanelC from './PanelC';
 import PanelD from './PanelD';
 import PanelE from './PanelE';
 import PanelF from './PanelF';
+import PanelG from './PanelG';
 
 class Main extends React.Component {
     constructor(props) {
@@ -60,7 +61,7 @@ class Main extends React.Component {
                         <PanelD ref={this.ref3} />
                         <PanelE ref={this.ref4} />
                         <PanelF ref={this.ref5} />
-                        <PanelC ref={this.ref6} />
+                        <PanelG ref={this.ref6} />
                     </ContentPanel>
                     </div>
                 </div>

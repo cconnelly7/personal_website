@@ -1,7 +1,7 @@
 import React from 'react';
 import './ContentPanel.css';
 
-const PanelC = React.forwardRef((props, ref)=>{
+const PanelG = React.forwardRef((props, ref)=>{
 
     return (
         <div className='column' ref={ref}>
@@ -9,4 +9,4 @@ const PanelC = React.forwardRef((props, ref)=>{
         </div>
     )
 }) 
-export default PanelC;
+export default PanelG;

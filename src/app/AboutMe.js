@@ -4,6 +4,7 @@ import './AboutMe.css';
 const AboutMe = React.forwardRef((props, ref)=>{
 
     return (
+        <div height='100vh'>
         <div className='box2' ref={ref}>
             <div className='content'>
                 <div className='aboutMe'>About Me</div>
@@ -28,8 +29,8 @@ const AboutMe = React.forwardRef((props, ref)=>{
 
 
             </div>
-
         </div> 
+        </div>
     )
 }) 
 

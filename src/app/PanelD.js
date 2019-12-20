@@ -10,8 +10,8 @@ import {
 const PanelD = React.forwardRef((props, ref)=>{
 
     return (
-        <div className='column'>
-            <div className='box2' ref={ref}></div> 
+        <div className='column' ref={ref}>
+            <div className='box2' ></div> 
             <button><Link to="/project1">project1</Link></button>
         </div>
     )
