@@ -28,7 +28,7 @@ class HomeScreen extends React.Component {
         return (
             <div>
                 <p className='box' ref={this.props.myref}>
-                    <div id="changeText"></div>
+                    <div className='extraSpace'></div>
                     <h2 className="header fade-up">Hello!</h2>
                     <h3 className="header fade-up">I'm Chianne</h3>
                 </p> 

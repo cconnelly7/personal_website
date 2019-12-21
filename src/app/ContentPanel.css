@@ -45,6 +45,7 @@
     align-self: flex-start;
     flex-basis: 30%;
     margin: auto;
+    min-width: 150px;
 }
 
 .content {

@@ -11,36 +11,17 @@ import Contact from './Contact';
 import $ from 'jquery';
 
 class Main extends React.Component {
-    constructor(props) {
-        super(props);
-        this.ref0 = React.createRef();
-        this.ref1 = React.createRef();
-        this.ref2 = React.createRef();
-        this.ref3 = React.createRef();
-        this.ref4 = React.createRef();
-        this.ref5 = React.createRef();
-        this.ref6 = React.createRef();
-        this.btnStyle = "btn after-from-center"
-        this.btnActive = 'btnActive'
-    }
     render () {
         $(function() {
 			var homeH = $( window ).height(),
 				navPanels = $();
 				
 			$('#prod-menu a').each(function() {
-				navPanels = navPanels.add($(this.hash));	// easy array of nav panels according to nav items
+				navPanels = navPanels.add($(this.hash));	// array of nav panels according to nav items
 			});
 			
 			$( window ).scroll(function() {
-				// toggle top menu
-				// if ( $( window ).scrollTop() < homeH/2) {
-				// 	$("#prod-menu ul li").removeClass("sel");
-				// 	$("#prod-menu").css("top", ($('#prod-menu').outerHeight()*-1));
-				// } 
-				// else {
-					$("#prod-menu").css("top", "0");
-				// };
+				$("#prod-menu").css("top", "0");
 
 				// toggle top menu selection
 				navPanels.each(function() {
@@ -78,7 +59,7 @@ class Main extends React.Component {
                         <h1 className="name">Chianne Connelly</h1>
                         <h1 className="job">Software Engineer</h1>
                         <div class="wrapper">
-                            <ul>
+                            <ul margin='0' padding='0'>
                                 <li><a href="#home"><button className="btn after-from-center" >Home</button></a></li>
                                 <li><a href="#about"><button className="btn after-from-center">About Me</button></a></li>
                                 <li><a href="#skills"><button className="btn after-from-center">Skills</button></a></li>
@@ -89,7 +70,6 @@ class Main extends React.Component {
                             </ul>
                         </div>
                     </nav>
-                    {/* <section class="prod-hero"></section> */}
 
                     <div className='content-column'>
                         <ContentPanel >		
@@ -118,62 +98,6 @@ class Main extends React.Component {
                     </div>
                 </div>
             </div>
-
-
-
-
-            // <div className='row'>
-            //     <div className='white-column'>
-            //         <ul className='nav-column' id="top-menu">
-
-                        // <div className="circleBase type1"></div>
-                        // <h1 className="name">Chianne Connelly</h1>
-                        // <h1 className="job">Software Engineer</h1>
-
-            //             <li class="active">
-            //                 <a href="#"> <button className={this.btnStyle} onClick={()=>{
-            //                     this.ref0.current.scrollIntoView({behavior:'smooth'})
-            //                     // document.getElementById('0').className=this.btnActive
-            //                 }}>Home</button></a>
-            //             </li>
-            //             <li>
-            //                 <a href="#about"> <button className={this.btnStyle} onClick={()=>{
-            //                     this.ref1.current.scrollIntoView({behavior:'smooth'})
-            //                 }}>About Me</button></a>
-            //             </li>
-            //             <button className="btn after-from-center"onClick={()=>{
-            //                 this.ref2.current.scrollIntoView({behavior:'smooth'})
-            //             }}>Skills</button>
-
-            //             <button className="btn after-from-center"onClick={()=>{
-            //                 this.ref3.current.scrollIntoView({behavior:'smooth'})
-            //             }}>Projects</button>
-
-            //             <button className="btn after-from-center"onClick={()=>{
-            //                 this.ref4.current.scrollIntoView({behavior:'smooth'})
-            //             }}>Resume</button>
-
-            //             <button className="btn after-from-center"onClick={()=>{
-            //                 this.ref5.current.scrollIntoView({behavior:'smooth'})
-            //             }}>Blog</button>
-                        
-            //             <button className="btn after-from-center"onClick={()=>{
-            //                 this.ref6.current.scrollIntoView({behavior:'smooth'})
-            //             }}>Contact</button>
-            //         </ul>
-            //         <div className='content-column'>
-            //         <ContentPanel >
-            //             <HomeScreen ref={this.ref0} />
-            //             <AboutMe ref={this.ref1} />
-            //             <PanelC ref={this.ref2} />
-            //             <PanelD ref={this.ref3} />
-            //             <PanelE ref={this.ref4} />
-            //             <PanelF ref={this.ref5} />
-            //             <Contact ref={this.ref6} />
-            //         </ContentPanel>
-            //         </div>
-            //     </div>
-            // </div>
         )
     }
 }

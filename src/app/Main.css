@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type:none
+}
 .row {
   background-color: #e8ecef;
   width: 100%;
@@ -27,7 +33,7 @@
   height: 100vh;
   position: fixed;
   width:19%;
-  min-width: 80px;
+  min-width: 95px;
   max-width: 500px;
 }
 
@@ -80,11 +86,11 @@
 
 /* BUTTON */
 .btn {
+  text-align: center;
   text-decoration: none;
   background: none;
   border: none;
   outline: none;
-  text-decoration: none;
   display: block;
   font-size: 18px;
   color: black;
@@ -134,105 +140,6 @@
   position: absolute;
 }
 
-.btnActive {
-  background: none;
-  border: none;
-  outline: none;
-  text-decoration: none;
-  display: block;
-  font-size: 18px;
-  color: #67b771;
-  cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-* {margin:0; padding:0}
-body {font-family:sans-serif}
-ul {list-style:none}
-
-.prod-hero {
-  background: #000;
-  color:#fff;
-  margin-top: -1em;
-  height: 30em;
-  padding-top: 3em;
-}
-
-.prod-hero h1 {
-  font-size: 2.5em;
-}
-
-.textm {
-  font-size: 1.4em;
-}
-.prod-hero li {
-  font-size: 1.1em;
-  line-height: 1.4;
-}
-
-.prod-cta {
-    margin-bottom: 2em;
-    margin-top: -10em;
-}
-
-.ret-quote {
-  font-size: 0.9em;
-  display: inline-block;
-  text-decoration: underline;
-  color: #888;
-  padding: 1em;
-}
-
-.js-panel > a {display: block;}
-
-.prod-panels {
-    text-align: center;
-  min-height: 1000px;
-}
-
-/* #prod-menu {
-  position: fixed;
-  width: 100%;
-  top: -55px;
-  left: 0;
-  transition: all 0.5s ease;
-  background: #fff;
-  border-bottom: 0 solid rgba(0,0,0,0);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1),0 0 0 1px rgba(0,0,0,0.05);
-  z-index: 1000;
-} */
-/* #prod-menu li {
-  float: left;
-  padding: 0.8em 0.8em 1em;
-}
-#prod-menu li a {
-  padding: 0.5em 0.1em 0.1em;
-  display: inline-block;
-} */
-
 #prod-menu li.sel a button{
     color:#67b771;
 }
-
-/* h2 {
-    padding-top: 2.5em;
-    font-weight: normal;
-    font-size: 2em;
-    color: #666;
-    border-top: 1px solid #e2e2e2;
-} */

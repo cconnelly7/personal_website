@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .content {
@@ -16,6 +17,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    flex-wrap: wrap-reverse;
 }
 
 .extraSpace {
@@ -26,6 +28,8 @@
 .text {
     flex-basis: 30%;
     margin: auto;
+    min-width: 250px;
+    padding-top: 50px;
 }
 
 .whiteSpace {
@@ -40,7 +44,9 @@
   color: gray;
   align-self: flex-start;
   flex-basis: 30%;
+  min-width: 150px;
   margin: auto;
+  
 }
 
 .wrapper {
@@ -48,10 +54,12 @@
     height: 100%;
     margin: 0 auto;
     flex-basis: 60%;
+    padding-top: 50px;
 }
   
 .h_iframe {
   position: relative;
+  min-width: 250px;
 }
 
 .h_iframe .ratio {
