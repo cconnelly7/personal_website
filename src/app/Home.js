@@ -32,7 +32,7 @@ class HomeScreen extends React.Component {
                     <h2 className="header fade-up">Hello!</h2>
                     <h3 className="header fade-up">I'm Chianne</h3>
                 </p> 
-                {/* <div className='extraSpace'></div> */}
+                <div className='extraSpace'></div>
             </div> 
         )
     }

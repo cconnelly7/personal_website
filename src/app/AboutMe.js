@@ -4,7 +4,7 @@ import './AboutMe.css';
 const AboutMe = React.forwardRef((props, ref)=>{
 
     return (
-        <div height='100vh'>
+        <div>
         <div className='box2' ref={ref}>
             <div className='content'>
                 <div data-aos='fade-in' className='aboutMe'>About Me</div>
@@ -30,6 +30,7 @@ const AboutMe = React.forwardRef((props, ref)=>{
 
             </div>
         </div> 
+        <div className='extraSpace'></div>
         </div>
     )
 }) 

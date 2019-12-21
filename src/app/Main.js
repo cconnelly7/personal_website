@@ -62,7 +62,7 @@ class Main extends React.Component {
 					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 					if (target.length) {
 						$('html,body').animate({
-							scrollTop: target.offset().top-$('#prod-menu').outerHeight()
+							scrollTop: target.offset().top //-$('#prod-menu').outerHeight()
 						}, 700);
 						return false;
 					}
@@ -79,7 +79,7 @@ class Main extends React.Component {
                         <h1 className="job">Software Engineer</h1>
                         <div class="wrapper">
                             <ul>
-                                <li><a href="#home"><button className="btn after-from-center">Home</button></a></li>
+                                <li><a href="#home"><button className="btn after-from-center" >Home</button></a></li>
                                 <li><a href="#about"><button className="btn after-from-center">About Me</button></a></li>
                                 <li><a href="#skills"><button className="btn after-from-center">Skills</button></a></li>
                                 <li><a href="#projects"><button className="btn after-from-center">Projects</button></a></li>
@@ -94,7 +94,7 @@ class Main extends React.Component {
                     <div className='content-column'>
                         <ContentPanel >		
                             <section id="home">	
-                                <HomeScreen/>
+                                <HomeScreen />
                             </section>
                             <section id="about">	
                                 <AboutMe/>
