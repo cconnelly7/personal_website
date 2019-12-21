@@ -1,4 +1,5 @@
 .box {
+  margin: 0;
   display: flex;
   justify-content: flex-start;
   align-content: flex-start;
@@ -11,6 +12,7 @@
   background-size: cover;
 }
 .box0 {
+  margin: 0;
   display: flex;
   justify-content: flex-start;
   align-content: flex-start;
@@ -21,6 +23,11 @@
   background-position:50% 50%;
   background-repeat:no-repeat;
   background-size: cover;
+}
+
+.extraSpace {
+  width: 100%;
+  height: 200px;
 }
 
 /* Animation translate up text */

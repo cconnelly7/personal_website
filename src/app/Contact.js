@@ -12,12 +12,14 @@ const Contact = React.forwardRef((props, ref)=>{
                 </div>
 
                 <div className='content'>
-                    <div className='squarePhone'></div>
-                    <div className='rectangle'> (480) 467 - 9108</div>
+                    <div data-aos="flip-up" className='squarePhone'></div>
+                    <div data-aos="flip-up" className='rectangle'> 
+                        <div align-self='center'>(480) 467 - 9108</div>
+                    </div>
                 </div>
                 <div className='content'>
-                    <div className='squareEmail'></div>
-                    <div className='rectangle'> chiannerose@gmail.com</div>
+                    <div data-aos="flip-down" className='squareEmail'></div>
+                    <div data-aos="flip-down" className='rectangle'> chiannerose@gmail.com</div>
                 </div>
             </div>
         </div>

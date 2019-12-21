@@ -67,6 +67,7 @@
     background-color: teal;
 } */
 .squareEmail {
+    margin-top: 20px;
     height: 100px;
     width: 100px;
     background-color: gray;
@@ -76,6 +77,7 @@
     background-size: 70%;
 }
 .squarePhone {
+    margin-top: 20px;
     height: 100px;
     width: 100px;
     background-color: gray;
@@ -86,14 +88,16 @@
 }
 
 .rectangle {
+    margin-top: 20px;
+    display: flex;
     flex-basis: 30%;
     min-width: 164px;
     height:100px;
     background-color: #d1d5d9;
     font-family: 'Anton', sans-serif;
     font-weight: 200;
+    align-items: center;
     justify-content: center;
-    text-align: center;
     color: gray;
 }
 
