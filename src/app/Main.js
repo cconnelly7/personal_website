@@ -3,7 +3,7 @@ import './Main.css';
 import ContentPanel from './ContentPanel';
 import HomeScreen from './Home';
 import AboutMe from './AboutMe';
-import PanelC from './PanelC';
+import Skills from './Skills';
 import PanelD from './PanelD';
 import PanelE from './PanelE';
 import PanelF from './PanelF';
@@ -80,7 +80,7 @@ class Main extends React.Component {
                                 <AboutMe/>
                             </section>
                             <section id="skills">	
-                                <PanelC/>
+                                <Skills/>
                             </section>
                             <section id="projects">	
                                 <PanelD/>
