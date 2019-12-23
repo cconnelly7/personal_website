@@ -93,7 +93,7 @@
   outline: none;
   display: block;
   font-size: 18px;
-  color: black;
+  color: rgb(70, 70, 70);
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
@@ -106,7 +106,7 @@
   transition: all ease 0.5s;
 }
 .btn:hover {
-  color: #67b771;
+  color: black;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -140,6 +140,35 @@
   position: absolute;
 }
 
+
+
+
+
+
 #prod-menu li.sel a button{
     color:#67b771;
+}
+#prod-menu li.sel a .btn:after {
+  content: '';
+  width: 100%; /*set width to 0 initially, so animates from nothing */
+  height: 2px; /*height of underline*/
+  background: #67b771;
+  display: block; 
+  /* animation settings
+  0.2s duration, 0.1s delay, with easing */
+  transition: width 0.2s 0.1s ease-in-out; 
+}
+
+#prod-menu li.sel a .after-from-center:after {   
+  /* center the underline
+  so animation will occur from the center.
+  remove this class if you want animation from the left instead */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#prod-menu li.sel a .constrain-after:after {
+  /* position: relative; */
+  position: absolute;
 }
