@@ -18,12 +18,22 @@ class Main extends React.Component {
 				
 			$('#prod-menu a').each(function() {
 				navPanels = navPanels.add($(this.hash));	// array of nav panels according to nav items
-			});
+            });
+            
+            // makes it so home is underlined when load page and dont have to wait for scroll
+            navPanels.each(function() {
+                var $p = $(this)	// current panel in loop
+                
+                if ( $( window ).scrollTop() + $('#prod-menu').outerHeight() >= $p.offset().top) { 
+                    $("#prod-menu ul li").removeClass("sel");
+                    $('#prod-menu a').filter('[href="#'+$p.attr('id')+'"]').parent().addClass("sel");
+                }
+            });
 			
 			$( window ).scroll(function() {
 				$("#prod-menu").css("top", "0");
 
-				// toggle top menu selection
+				// toggle nav btn that's highlighted
 				navPanels.each(function() {
 					var $p = $(this)	// current panel in loop
 					
