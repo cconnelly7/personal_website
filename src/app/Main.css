@@ -35,6 +35,7 @@
   width:19%;
   min-width: 95px;
   max-width: 500px;
+  z-index: 20;
 }
 
 .content-column {

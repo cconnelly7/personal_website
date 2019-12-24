@@ -197,20 +197,24 @@
 
   .direction-l {
     position: relative;
-    width: 310px;
+    width: 1000px;
     float: left;
     text-align: right;
   }
 
   .direction-r {
     position: relative;
-    width: 310px;
+    width: 1000px;
     float: right;
     text-align: left;
   }
 
   .flag-wrapper {
     display: inline-block;
+  }
+
+  .direction-l .flag-wrapper {
+    right: -100px;
   }
   
   .flag {
@@ -248,7 +252,7 @@
 
   .direction-l .time-wrapper {
     left: auto;
-    right: -318px;
+    right: -132px;
   }
 
   .direction-r .time-wrapper {

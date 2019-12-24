@@ -39,10 +39,15 @@ $(document).ready(function () {
 });
 
 
-const PanelD = React.forwardRef((props, ref)=>{
+const Projects = React.forwardRef((props, ref)=>{
 
     return (
-        <div className='box2' >
+        <div className='box3' >
+            <div className='content'>
+                <div data-aos='fade-in' className='sectionHeader'>Projects</div>
+                <div className='whiteSpace'></div>
+            </div>
+            <div className='moreSpace'></div>
             <button data-js="open">project1</button>
 
             <div class="popup">
@@ -55,4 +60,4 @@ const PanelD = React.forwardRef((props, ref)=>{
         </div> 
     )
 }) 
-export default PanelD;
+export default Projects;

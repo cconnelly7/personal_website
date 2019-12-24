@@ -4,9 +4,9 @@ import ContentPanel from './ContentPanel';
 import HomeScreen from './Home';
 import AboutMe from './AboutMe';
 import Skills from './Skills';
-import PanelD from './PanelD';
-import PanelE from './PanelE';
-import PanelF from './PanelF';
+import Projects from './Projects';
+import Resume from './Resume';
+import Blog from './Blog';
 import Contact from './Contact';
 import $ from 'jquery';
 
@@ -64,6 +64,7 @@ class Main extends React.Component {
         return (
             <div className='row'>
                 <div className='white-column'>
+                <div id="overlay" > {/* class="cover blur-in" */}
                     <nav className='nav-column' id="prod-menu">
                         <div className="circleBase type1"></div>
                         <h1 className="name">Chianne Connelly</h1>
@@ -93,18 +94,19 @@ class Main extends React.Component {
                                 <Skills/>
                             </section>
                             <section id="projects">	
-                                <PanelD/>
+                                <Projects/>
                             </section>
                             <section id="resume">	
-                                <PanelE/>
+                                <Resume/>
                             </section>
                             <section id="blog">	
-                                <PanelF/>
+                                <Blog/>
                             </section>
                             <section id="contact">	
                                 <Contact/>
                             </section>
                         </ContentPanel>
+                    </div>
                     </div>
                 </div>
             </div>

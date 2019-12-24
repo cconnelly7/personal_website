@@ -18,7 +18,7 @@ const Skills = React.forwardRef((props, ref)=>{
                         <span class="time-wrapper" data-aos="fade-right"><span class="time">Dec 2014</span></span>
                         <div class="flag-wrapper" >
                             <span class="circ"data-aos="zoom-out"></span>
-                            <span class="flag" >React</span>
+                            <span class="flag" >Web Dev/React</span>
                         </div>
                     <   div class="desc" data-aos="fade-left" >Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident. </div>
                     </div>
@@ -26,11 +26,11 @@ const Skills = React.forwardRef((props, ref)=>{
 
                 <li>
                     <div class="direction-l">
-                        <span class="time-wrapper" data-aos="fade-left"><span class="time">Dec 2014</span></span>
                         <div class="flag-wrapper">
                             <span class="circ" data-aos="zoom-out" ></span>
-                            <span class="flag">Lorem ipsum Anim.</span>
+                            <span class="flag">App Dev/React-Native</span>
                         </div>
+                        <span class="time-wrapper" data-aos="fade-left"><span class="time">Dec 2014</span></span>
                     <div class="desc" data-aos="fade-right">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
                     </div>
                 </li>
@@ -40,12 +40,25 @@ const Skills = React.forwardRef((props, ref)=>{
                         <span class="time-wrapper" data-aos="fade-right"><span class="time">July 2014</span></span>
                         <div class="flag-wrapper">
                             <span class="circ" data-aos="zoom-out"></span>
-                            <span class="flag" data-aos="fade-left">Lorem Occaecat.</span>
+                            <span class="flag" data-aos="fade-left">Android/Java</span>
                         </div>
                     <div class="desc" data-aos="fade-left">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
                     </div>
                 </li>
+
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="circ" data-aos="zoom-out" ></span>
+                            <span class="flag">C#/Unity 3D</span> {/* C#/Unity 3D */}
+                        </div>
+                        <span class="time-wrapper" data-aos="fade-left"><span class="time">Dec 2014</span></span>
+                    <div class="desc" data-aos="fade-right">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+                    </div>
+                </li>
             </ul>
+            <div className='moreSpace'></div>
+            <div className='moreSpace'></div>
             <div className='moreSpace'></div>
         </div>
     )
