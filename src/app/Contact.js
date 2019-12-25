@@ -10,6 +10,8 @@ const Contact = React.forwardRef((props, ref)=>{
                 <div className='whiteSpace'></div>
             </div>
 
+            <div className='moreSpace'></div>
+
             <div className='content'>
                 <div data-aos="flip-up" className='squarePhone'></div>
                 <div data-aos="flip-up" className='rectangle'> 
