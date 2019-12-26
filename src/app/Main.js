@@ -71,13 +71,13 @@ class Main extends React.Component {
                         <h1 className="job">Software Engineer</h1>
                         <div class="wrapper">
                             <ul margin='0' padding='0'>
-                                <li><a href="#home"><button className="btn after-from-center" >Home</button></a></li>
-                                <li><a href="#about"><button className="btn after-from-center">About Me</button></a></li>
-                                <li><a href="#skills"><button className="btn after-from-center">Skills</button></a></li>
-                                <li><a href="#projects"><button className="btn after-from-center">Projects</button></a></li>
-                                <li><a href="#resume"><button className="btn after-from-center">Resume</button></a></li>
-                                <li><a href="#blog"><button className="btn after-from-center">Blog</button></a></li>
-                                <li><a href="#contact"><button className="btn after-from-center">Contact</button></a></li>
+                                <li><a href="#home"><button className="bttn after-from-center" >Home</button></a></li>
+                                <li><a href="#about"><button className="bttn after-from-center">About Me</button></a></li>
+                                <li><a href="#skills"><button className="bttn after-from-center">Skills</button></a></li>
+                                <li><a href="#projects"><button className="bttn after-from-center">Projects</button></a></li>
+                                <li><a href="#resume"><button className="bttn after-from-center">Resume</button></a></li>
+                                <li><a href="#blog"><button className="bttn after-from-center">Blog</button></a></li>
+                                <li><a href="#contact"><button className="bttn after-from-center">Contact</button></a></li>
                             </ul>
                         </div>
                     </nav>

@@ -1,0 +1,145 @@
+.box3 {
+    display: flex;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #e8ecef;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    padding-top: 50px;
+}
+.sectionHeader {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: gray;
+    align-self: flex-start;
+    flex-basis: 30%;
+    margin: auto;
+    min-width: 150px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.whiteSpace {
+    flex-basis: 60%;
+    margin: auto;
+}
+.moreSpace {
+    width: 100%;
+    height: 50px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card_image {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  filter: contrast(70%);
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  width:100%;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card:hover .card_image{
+    filter: contrast(100%);
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 500px) {
+    .cards_item {
+      width: 100%;
+    }
+}
+@media (min-width: 640px) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 896px) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card_title {
+  color: #696969;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #696969;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}

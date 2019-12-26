@@ -1,12 +1,6 @@
 import React from 'react';
-import './ContentPanel.css';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 import $ from 'jquery';
+import './Projects.css'
 
 
 function popupOpenClose(popup) {
@@ -47,17 +41,82 @@ const Projects = React.forwardRef((props, ref)=>{
                 <div data-aos='fade-in' className='sectionHeader'>Projects</div>
                 <div className='whiteSpace'></div>
             </div>
+
             <div className='moreSpace'></div>
-            <button data-js="open">project1</button>
 
-            <div class="popup">
-                <h1>This is my popup</h1>
-                <a>Lorem ipsum dolor sit amet consectetur, adipiscing elit lacinia mus, sapien nibh imperdiet tempus. Vitae massa semper mi sagittis a cum cursus fusce per, gravida tellus metus purus litora nam ultricies donec, nibh dis ligula ad facilisi penatibus condimentum aenean.</a>
-
-                <a>Aliquet odio id vulputate ad sodales blandit tempor, neque facilisi turpis dis curabitur ac velit potenti, montes bibendum pretium lacinia lobortis aenean. Orci integer eu tincidunt  scelerisque iaculis, porta elementum sagittis proin penatibus magna tempor.</a>
-                <button name="close">Close</button>
-            </div>
+                <ul class="cards">
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></img></div>
+                            <div class="card_content">
+                            <h4 class="card_title">Card Grid Layout</h4>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                            <button class="btn card_btn">Read More</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></img></div>
+                            <div class="card_content">
+                            <h4 class="card_title">Card Grid Layout</h4>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                            <button class="btn card_btn">Read More</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></img></div>
+                            <div class="card_content">
+                            <h4 class="card_title">Card Grid Layout</h4>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                            <button class="btn card_btn">Read More</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></img></div>
+                            <div class="card_content">
+                            <h4 class="card_title">Card Grid Layout</h4>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                            <button class="btn card_btn">Read More</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></img></div>
+                            <div class="card_content">
+                            <h4 class="card_title">Card Grid Layout</h4>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                            <button class="btn card_btn">Read More</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></img></div>
+                            <div class="card_content">
+                            <h4 class="card_title">Card Grid Layout</h4>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                            <button class="btn card_btn">Read More</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
         </div> 
     )
 }) 
 export default Projects;
+
+{/* <button data-js="open">project1</button>
+
+<div class="popup">
+    <h1>This is my popup</h1>
+    <a>Lorem ipsum dolor sit amet consectetur, adipiscing elit lacinia mus, sapien nibh imperdiet tempus. Vitae massa semper mi sagittis a cum cursus fusce per, gravida tellus metus purus litora nam ultricies donec, nibh dis ligula ad facilisi penatibus condimentum aenean.</a>
+
+    <a>Aliquet odio id vulputate ad sodales blandit tempor, neque facilisi turpis dis curabitur ac velit potenti, montes bibendum pretium lacinia lobortis aenean. Orci integer eu tincidunt  scelerisque iaculis, porta elementum sagittis proin penatibus magna tempor.</a>
+    <button name="close">Close</button>
+</div> */}

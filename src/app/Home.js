@@ -18,7 +18,7 @@ class HomeScreen extends React.Component {
                 $this.toggleClass('header fade-up header fade-up1');     
                 $this.fadeIn(500);
             });
-            $('p').fadeOut(500, function() {
+            $("#webPic").fadeOut(500, function() {
                 var $this = $(this);
                 $this.toggleClass('box box0');     
                 $this.fadeIn(500);
@@ -27,7 +27,7 @@ class HomeScreen extends React.Component {
         }, 4500);
         return (
             <div>
-                <p className='box' ref={this.props.myref}>
+                <p id="webPic" className='box' ref={this.props.myref}>
                     <div className='extraSpace'></div>
                     <h2 className="header fade-up">Hello!</h2>
                     <h3 className="header fade-up">I'm Chianne</h3>

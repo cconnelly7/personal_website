@@ -86,7 +86,7 @@
 }
 
 /* BUTTON */
-.btn {
+.bttn {
   text-align: center;
   text-decoration: none;
   background: none;
@@ -106,13 +106,13 @@
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
-.btn:hover {
+.bttn:hover {
   color: black;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
-.btn:after {
+.bttn:after {
   content: '';
   width: 0; /*set width to 0 initially, so animates from nothing */
   height: 2px; /*height of underline*/
@@ -122,7 +122,7 @@
   0.2s duration, 0.1s delay, with easing */
   transition: width 0.2s 0.1s ease-in-out; 
 }
-.btn:hover:after {
+.bttn:hover:after {
     /* whatever width you want the underline to animate to */
     width: 100%; 
 }
@@ -148,7 +148,7 @@
 #prod-menu li.sel a button{
     color:#67b771;
 }
-#prod-menu li.sel a .btn:after {
+#prod-menu li.sel a .bttn:after {
   content: '';
   width: 100%; /*set width to 0 initially, so animates from nothing */
   height: 2px; /*height of underline*/
