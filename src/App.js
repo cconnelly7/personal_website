@@ -23,21 +23,21 @@ class App extends React.Component {
   render(){
     return(
       <Router>
-      <div>
-        <nav>
-          <div className="App">
-            <Link to="/"></Link>
-          </div>
-        </nav>
-        <Switch>
-          <Route path="/project1">
-            <Project1 />
-          </Route>
-          <Route path="/">
-            <Main></Main>
-          </Route>
-        </Switch>
-      </div>
+        <div>
+            <nav>
+              <div className="App">
+                <Link to="/"></Link>
+              </div>
+            </nav>
+            <Switch>
+              <Route path="/project1">
+                <Project1 />
+              </Route>
+              <Route path="/">
+                <Main></Main>
+              </Route>
+            </Switch>
+        </div>
     </Router>
     )
   }

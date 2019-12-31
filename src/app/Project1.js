@@ -23,16 +23,27 @@ $(function(){
  $(document).ready(function(){
  
  })
+
+ class ScrollToTopOnMount extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
+  render() {
+    return null;
+  }
+}
  
  
 
 function Project1() {
     return(
       <div>
+        <ScrollToTopOnMount />
         <div class="projPic">
           <h4>Computer Graphics Series</h4>
         </div>
-        <div class="content">
+        <div class="projStuffs">
           text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>
         </div>
       </div>
