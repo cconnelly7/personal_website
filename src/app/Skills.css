@@ -185,7 +185,7 @@
   }
   
   .timeline .circ {
-    left: -128px;
+    left: -108px;
     right: auto;
     top: 8px;
   }
@@ -214,7 +214,7 @@
   }
 
   .direction-l .flag-wrapper {
-    right: -100px;
+    right: -80px;
   }
   
   .flag {
@@ -222,7 +222,7 @@
   }
 
   .direction-r .flag {
-    left: -100px;
+    left: -80px;
   }
 
   .direction-l .flag:after {

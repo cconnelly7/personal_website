@@ -64,7 +64,8 @@ class Main extends React.Component {
         return (
             <div className='row'>
                 <div className='white-column'>
-                <div id="overlay" > {/* class="cover blur-in" */}
+                {/*<div id="overlay" > class="cover blur-in" */}
+                    
                     <nav className='nav-column' id="prod-menu">
                         <div className="circleBase type1"></div>
                         <h1 className="name">Chianne Connelly</h1>
@@ -107,7 +108,7 @@ class Main extends React.Component {
                             </section>
                         </ContentPanel>
                     </div>
-                    </div>
+                    {/* </div> */}
                 </div>
             </div>
         )
