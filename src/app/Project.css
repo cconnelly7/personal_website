@@ -1,15 +1,46 @@
-/* .projName {
-    width: 100%;
-    padding: 60px 0;
-    background: #fff;
-    border-bottom: 1px solid #e1e1e1;
-    transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    z-index: 9999;
-    top: 0;
+.projPic {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: red;
+    color:#fff;
+    z-index: 1000;
+    height: 200px;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+    text-align:center;
+    line-height:160px;
 }
+
+.projPic.shrink {
+    height: 100px;
+    line-height:80px;
+}
+.projPic h4
+{
+    font-size:30px;
+    font-weight:normal;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.projPic.shrink h4
+{
+    font-size:24px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.content
+{
+height:2000px;
+background:gray;
+width:100%;
+}
+/*
 
 .projName h {
   font-size: 30px;
