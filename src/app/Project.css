@@ -3,8 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: red;
-    color:#fff;
+    background: #d1d5d9;
+    color: rgb(70, 70, 70);
     z-index: 1000;
     height: 200px;
     -webkit-transition: height 0.3s;
@@ -18,27 +18,36 @@
     height: 100px;
     line-height:80px;
 }
-.projPic h4
-{
+.projPic h4 {
     font-size:30px;
+    font-family: 'Raleway', sans-serif;
     font-weight:normal;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
 
-.projPic.shrink h4
-{
+.projPic.shrink h4 {
     font-size:24px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
-.projStuffs
-{
-height:2000px;
-background:gray;
-width:100%;
+.projBg {
+    height:2000px;
+    background:#e8ecef;
+    width:100%;
+    padding-top: 220px;
+    display: inline-block;
+    text-align: center;
+}
+.projContent {
+    width: 65%;
+    display: inline-block;
+}
+.banner {
+    width: 100%;
+    height: auto;
 }
 /*
 

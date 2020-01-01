@@ -8,23 +8,20 @@ $(function(){
      var scroll = getCurrentScroll();
        if ( scroll >= shrinkHeader ) {
             $('.projPic').addClass('shrink');
-                    $('.projPic h4').fadeOut('fast');
          }
          else {
-            $('.projPic').removeClass('shrink');
-            $('.projPic h4').fadeIn('fast');        
+            $('.projPic').removeClass('shrink');       
          }
    });
  function getCurrentScroll() {
      return window.pageYOffset || document.documentElement.scrollTop;
      }
- });
+});
  
- $(document).ready(function(){
- 
- })
+ $(document).ready(function(){ })
 
- class ScrollToTopOnMount extends React.Component {
+
+class ScrollToTopOnMount extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -43,8 +40,11 @@ function Project1() {
         <div class="projPic">
           <h4>Computer Graphics Series</h4>
         </div>
-        <div class="projStuffs">
-          text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>text<br/>
+        <div class="projBg">
+          <div class="projContent">
+            <img class="banner" src="./Projects/ComputerGraphics/WalkerBanner.png"></img>
+
+          </div>
         </div>
       </div>
     )
