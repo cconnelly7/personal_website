@@ -14,7 +14,23 @@ class Main extends React.Component {
     render () {
         $(function() {
 			var homeH = $( window ).height(),
-				navPanels = $();
+                navPanels = $(),
+                $window = $(window),
+                $profPic = $('#profPic'),
+                $name = $('#name'),
+                $job = $('#job');              
+
+            $window.resize(function resize(){
+                if ($window.width() < 799) {
+                    return $profPic.removeClass('type1'), $name.removeClass('name'), $job.removeClass('job'), $name.addClass('textHide'), $job.addClass('textHide')
+                }
+        
+                $profPic.addClass('type1');
+                $name.removeClass('textHide');
+                $job.removeClass('textHide');
+                $name.addClass('name');
+                $job.addClass('job');
+            }).trigger('resize');
 				
 			$('#prod-menu a').each(function() {
 				navPanels = navPanels.add($(this.hash));	// array of nav panels according to nav items
@@ -70,9 +86,11 @@ class Main extends React.Component {
 
                 <nav class="s-sidebar__nav" id="prod-menu">
                     <ul>
-                        <div className="circleBase type1"></div>
-                        <h1 className="name">Chianne Connelly</h1>
-                        <h1 className="job">Software Engineer</h1>
+                        <div class="wrapper">
+                            <div className="circleBase type1" id="profPic"></div>
+                            <h1 className="name" id="name">Chianne Connelly</h1>
+                            <h1 className="job" id="job">Software Engineer</h1>
+                        </div>
                         <li>
                         <a class="s-sidebar__nav-link" href="#home">
                             <i class="fa fa-home"></i><button className="bttn after-from-center" >Home</button>
@@ -85,27 +103,27 @@ class Main extends React.Component {
                         </li>
                         <li>
                         <a class="s-sidebar__nav-link" href="#skills">
-                            <i class="fa fa-camera"></i><button className="bttn after-from-center">Skills</button>
+                            <i class="fa fa-plus-square"></i><button className="bttn after-from-center">Skills</button>
                         </a>
                         </li>
                         <li>
                         <a class="s-sidebar__nav-link" href="#projects">
-                            <i class="fa fa-camera"></i><button className="bttn after-from-center">Projects</button>
+                            <i class="fa fa-cubes"></i><button className="bttn after-from-center">Projects</button>
                         </a>
                         </li>
                         <li>
                         <a class="s-sidebar__nav-link" href="#resume">
-                            <i class="fa fa-camera"></i><button className="bttn after-from-center">Resume</button>
+                            <i class="fa fa-file"></i><button className="bttn after-from-center">Resume</button>
                         </a>
                         </li>
                         <li>
                         <a class="s-sidebar__nav-link" href="#blog">
-                            <i class="fa fa-camera"></i><button className="bttn after-from-center">Blog</button>
+                            <i class="fa fa-comment"></i><button className="bttn after-from-center">Blog</button>
                         </a>
                         </li>
                         <li>
                         <a class="s-sidebar__nav-link" href="#contact">
-                            <i class="fa fa-camera"></i><button className="bttn after-from-center">Contact</button>
+                            <i class="fa fa-address-book"></i><button className="bttn after-from-center">Contact</button>
                         </a>
                         </li>
                     </ul>

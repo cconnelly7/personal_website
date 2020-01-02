@@ -54,12 +54,11 @@
 }
 
 .type1 {
-  margin-top: 30px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
-  padding-top: 60%;
+  width: 90%;
+  padding-top: 90%;
   position: relative;
   background-image: url('./Assets/profPic.jpg');
   background-position:50% 50%;
@@ -71,7 +70,7 @@
 .name {
   font-size: 20px;
   margin-top: 0px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   color: black;
@@ -80,11 +79,20 @@
 .job {
   font-size: 14px;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   text-align: center;
   color: black;
+}
+.textHide {
+  font-size: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 0;
+  color: #d1d5d9;
+  text-align: center;
 }
 
 /* BUTTON */
@@ -187,7 +195,6 @@
 
 /* Sidebar */
 .s-sidebar__trigger {
-  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
@@ -214,6 +221,9 @@
   background: #d1d5d9;
   color: rgba(255, 255, 255, 0.7);
   z-index: 500;
+}
+.s-sidebar__nav .wrapper{
+  visibility: show;
 }
 
 .s-sidebar__nav:hover,
@@ -269,11 +279,10 @@
 
 /* Mobile First */
 @media (min-width: 42em) {
+
   .s-layout__content {
      margin-left: 4em;
   }
-  
-  /* Sidebar */
   .s-sidebar__trigger {
      width: 4em;
   }
@@ -289,16 +298,17 @@
   .s-sidebar__trigger:focus + .s-sidebar__nav {
      width: 15em;
   }
-
   
 }
 
 @media (min-width: 68em) {
+  .s-sidebar__nav .wrapper{
+    visibility: show;
+  }
   .s-layout__content {
      margin-left: 15em;
   }
-  
-  /* Sidebar */
+
   .s-sidebar__trigger {
      display: none
   }
