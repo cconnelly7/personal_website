@@ -18,7 +18,7 @@
     height: 100px;
     line-height:80px;
 }
-.projPic h4 {
+.projHeader {
     font-size:30px;
     font-family: 'Raleway', sans-serif;
     font-weight:normal;
@@ -26,6 +26,16 @@
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
+.sectionHeader {
+    font-size:30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:normal;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin: 16px;
+}
+
 
 .projPic.shrink h4 {
     font-size:24px;
@@ -44,33 +54,9 @@
 .projContent {
     width: 65%;
     display: inline-block;
+    text-align: left;
 }
 .banner {
     width: 100%;
     height: auto;
 }
-/*
-
-.projName h {
-  font-size: 30px;
-  text-indent: 40px;
-  font-weight:  bold;
-}
-    
-.container {
-  width: 40%;
-  margin: 180px auto;
-}
-  
-.shrink {
-  padding: 20px 0;
-}
-  
-p {
-  margin: 0 0 40px 0;
-  line-height: 24px;
-}
- 
-strong {
-  font-weight: bold;
-} */

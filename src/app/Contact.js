@@ -14,9 +14,7 @@ const Contact = React.forwardRef((props, ref)=>{
 
             <div className='content'>
                 <div data-aos="flip-up" className='squarePhone'></div>
-                <div data-aos="flip-up" className='rectangle'> 
-                    <div align-self='center'>(480) 467 - 9108</div>
-                </div>
+                <div data-aos="flip-up" className='rectangle'>(480) 467 - 9108 </div>
             </div>
             <div className='content'>
                 <div data-aos="flip-down" className='squareEmail'></div>

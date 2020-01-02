@@ -38,12 +38,12 @@ function Project1() {
       <div>
         <ScrollToTopOnMount />
         <div class="projPic">
-          <h4>Computer Graphics Series</h4>
+          <h4 class='projHeader'>Computer Graphics Series</h4>
         </div>
         <div class="projBg">
           <div class="projContent">
             <img class="banner" src="./Projects/ComputerGraphics/WalkerBanner.png"></img>
-
+            <h4 class='sectionHeader'>Overview</h4>
           </div>
         </div>
       </div>
