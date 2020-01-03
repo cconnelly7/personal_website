@@ -9,7 +9,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Project1 from './app/Project1';
+import CompGraphics from './app/CompGraphics';
 
 class App extends React.Component {
   constructor(props){
@@ -30,8 +30,8 @@ class App extends React.Component {
               </div>
             </nav>
             <Switch>
-              <Route path="/project1">
-                <Project1 />
+              <Route path="/computer_graphics">
+                <CompGraphics />
               </Route>
               <Route path="/">
                 <Main></Main>
