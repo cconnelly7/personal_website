@@ -44,8 +44,8 @@ function Glance() {
           <div class="projContent">
             <img class="banner" src="./Projects/Glance/Glance.png"></img>
             <h4 class='sectionHeader'>Overview</h4>
-            <p> Glance is a smart product that helps users stay safe on their walk home at night. It features a distance sensor that attached to the back of the user's backpack.
-               When the product is turned on, if a predator gets within a close range to the user, an orange light that is attached to the backpack strap will flash and alert the user along with a gentle vibration. If
+            <p> Glance is a smart product that helps users stay safe on their walk home at night. It features a distance sensor that attaches to the back of the user's backpack.
+               When the product is turned on, if a predator gets within a close range to the user, an light that is attached to the backpack strap will flash orange to alert the user along with a gentle vibration. If
                 the predator stays within this range over several seconds, the light will flash red.
             </p>
             <div class="imgContainer">
@@ -53,7 +53,7 @@ function Glance() {
               <img class="image3" src="./Projects/Glance/light.png"></img>
             </div>
             <p>
-            The user can chose to attach their device to a wristband or a clip to put on their backpack. 
+            The user can chose to attach their device to a clip to put on their backpack or to a wristband. 
             </p>
             <img class="image1" src="./Projects/Glance/glance.gif"></img>
             

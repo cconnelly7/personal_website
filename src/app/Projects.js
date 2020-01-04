@@ -61,11 +61,11 @@ const Projects = React.forwardRef((props, ref)=>{
                     </li>
                     <li class="cards_item">
                         <div data-aos="zoom-in-left" class="card">
-                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></img></div>
+                            <img class="card_image" src="./Projects/IceClimber/ice.jpg"></img>
                             <div class="card_content">
                             <h4 class="card_title">Ice Climber</h4>
                             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button class="btn card_btn"><Link class="linkStlye" to="/ice_climber">View</Link></button>
+                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/computer_graphics">View</Link></button>
                             </div>
                         </div>
                     </li>
@@ -81,31 +81,51 @@ const Projects = React.forwardRef((props, ref)=>{
                     </li>
                     <li class="cards_item">
                         <div data-aos="zoom-in-left" class="card">
-                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></img></div>
+                            <img class="card_image" src="./Projects/WMS/wms.jpg"></img>
                             <div class="card_content">
-                            <h4 class="card_title">Card Grid Layout</h4>
+                            <h4 class="card_title">Where's My Stuff App</h4>
                             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button class="btn card_btn">View</button>
+                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/glance">View</Link></button>
                             </div>
                         </div>
                     </li>
                     <li class="cards_item">
                         <div data-aos="zoom-in-left" class="card">
-                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></img></div>
+                            <img class="card_image" src="./Projects/Scarfboi/Scarfboi.jpg"></img>
                             <div class="card_content">
-                            <h4 class="card_title">Card Grid Layout</h4>
+                            <h4 class="card_title">The Legend of Scarf Boi</h4>
                             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button class="btn card_btn">View</button>
+                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/glance">View</Link></button>
                             </div>
                         </div>
                     </li>
                     <li class="cards_item">
                         <div data-aos="zoom-in-left" class="card">
-                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></img></div>
+                            <img class="card_image" src="./Projects/SpaceEx/SpaceEx.jpg"></img>
                             <div class="card_content">
-                            <h4 class="card_title">Card Grid Layout</h4>
+                            <h4 class="card_title">SpaceEx</h4>
                             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button class="btn card_btn">View</button>
+                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/glance">View</Link></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div data-aos="zoom-in-left" class="card">
+                            <img class="card_image" src="./Projects/Grown/Grown.jpg"></img>
+                            <div class="card_content">
+                            <h4 class="card_title">Grown Lamp Design</h4>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/grown">View</Link></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div data-aos="zoom-in-left" class="card">
+                            <img class="card_image" src="./Projects/Web/web.jpg"></img>
+                            <div class="card_content">
+                            <h4 class="card_title">This Website</h4>
+                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/glance">View</Link></button>
                             </div>
                         </div>
                     </li>

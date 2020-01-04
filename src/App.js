@@ -12,6 +12,7 @@ import {
 import CompGraphics from './app/CompGraphics';
 import IceClimber from './app/IceClimber';
 import Glance from './app/Glance';
+import Grown from './app/Grown';
 
 
 class App extends React.Component {
@@ -41,6 +42,9 @@ class App extends React.Component {
               </Route>
               <Route path="/glance">
                 <Glance />
+              </Route>
+              <Route path="/grown">
+                <Grown />
               </Route>
               <Route path="/">
                 <Main></Main>

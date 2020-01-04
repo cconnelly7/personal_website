@@ -63,7 +63,7 @@ function CompGraphics() {
             </div>
             <p>
             In the next part of this series, I created a runner that followed a path that could be manipulated by the user. I first found the acceleration vector between the subdivision points
-             of some control points. Next, I used the acceleration vectors to generate a curve along the floor. I used this as my footpath. To make the feet move, I count the frames and move the
+             of some control points. Next, I used the acceleration vectors to generate a curve along the floor. I used this as my footpath. To make the feet move, I counted the frames and moved the
               feet in cycles of 18 frames. I made legs with knees and calculated the knee points by using the foot location, forward direction, and hip location. I added a multiplier to the knee
                to vary how much it bends while it is moving. This was just to make it prettier. I added hips that tilt based on the cross product of the acceleration vector and forward direction.
                 I used a similar method to calculate the shoulders, as well as to add bending arms. The feet move up and down as the runner is taking steps.
