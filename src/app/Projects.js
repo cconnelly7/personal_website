@@ -85,7 +85,7 @@ const Projects = React.forwardRef((props, ref)=>{
                             <div class="card_content">
                             <h4 class="card_title">Where's My Stuff App</h4>
                             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/glance">View</Link></button>
+                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/wms">View</Link></button>
                             </div>
                         </div>
                     </li>
@@ -95,7 +95,7 @@ const Projects = React.forwardRef((props, ref)=>{
                             <div class="card_content">
                             <h4 class="card_title">The Legend of Scarf Boi</h4>
                             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/glance">View</Link></button>
+                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/scarfboi">View</Link></button>
                             </div>
                         </div>
                     </li>
@@ -105,7 +105,7 @@ const Projects = React.forwardRef((props, ref)=>{
                             <div class="card_content">
                             <h4 class="card_title">SpaceEx</h4>
                             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/glance">View</Link></button>
+                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/spaceEx">View</Link></button>
                             </div>
                         </div>
                     </li>

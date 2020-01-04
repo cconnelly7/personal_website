@@ -13,6 +13,9 @@ import CompGraphics from './app/CompGraphics';
 import IceClimber from './app/IceClimber';
 import Glance from './app/Glance';
 import Grown from './app/Grown';
+import WMS from './app/WMS';
+import ScarfBoi from './app/ScarfBoi';
+import SpaceEx from './app/SpaceEx';
 
 
 class App extends React.Component {
@@ -42,6 +45,15 @@ class App extends React.Component {
               </Route>
               <Route path="/glance">
                 <Glance />
+              </Route>
+              <Route path="/wms">
+                <WMS />
+              </Route>
+              <Route path="/scarfboi">
+                <ScarfBoi />
+              </Route>
+              <Route path="/spaceEx">
+                <SpaceEx />
               </Route>
               <Route path="/grown">
                 <Grown />

@@ -102,9 +102,7 @@
     height: auto;
     min-width: 250px;
 }
-.stretch {
+.extraSpace {
     width: 100%;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0
+    height: 100px;
 }
