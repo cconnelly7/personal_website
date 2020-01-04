@@ -59,7 +59,6 @@ function CompGraphics() {
               <img class="image2" src="./Projects/ComputerGraphics/cg1.png"></img>
               <img class="image2" src="./Projects/ComputerGraphics/cg2.png"></img>
               <img class="image2" src="./Projects/ComputerGraphics/cg3.png"></img>
-              <span class="stretch"></span>
             </div>
             <p>
             In the next part of this series, I created a runner that followed a path that could be manipulated by the user. I first found the acceleration vector between the subdivision points

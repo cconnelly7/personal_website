@@ -65,7 +65,7 @@ const Projects = React.forwardRef((props, ref)=>{
                             <div class="card_content">
                             <h4 class="card_title">Ice Climber</h4>
                             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/computer_graphics">View</Link></button>
+                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/ice_climber">View</Link></button>
                             </div>
                         </div>
                     </li>
