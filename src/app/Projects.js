@@ -51,7 +51,7 @@ const Projects = React.forwardRef((props, ref)=>{
                 <ul class="cards">
                     <li class="cards_item">
                         <div data-aos="zoom-in-left" class="card">
-                            <img class="card_image" src="./Projects/ComputerGraphics/Walker.png"></img>
+                            <img class="card_image" src="./Projects/ComputerGraphics/Walker.jpg"></img>
                             <div class="card_content">
                             <h4 class="card_title">Computer Graphics Series</h4>
                             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
@@ -65,17 +65,17 @@ const Projects = React.forwardRef((props, ref)=>{
                             <div class="card_content">
                             <h4 class="card_title">Ice Climber</h4>
                             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button class="btn card_btn">View</button>
+                            <button class="btn card_btn"><Link class="linkStlye" to="/ice_climber">View</Link></button>
                             </div>
                         </div>
                     </li>
                     <li class="cards_item">
                         <div data-aos="zoom-in-left" class="card">
-                            <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></img></div>
+                            <img class="card_image" src="./Projects/Glance/glance0.jpg"></img>
                             <div class="card_content">
-                            <h4 class="card_title">Card Grid Layout</h4>
+                            <h4 class="card_title">Glance</h4>
                             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button class="btn card_btn">View</button>
+                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/glance">View</Link></button>
                             </div>
                         </div>
                     </li>

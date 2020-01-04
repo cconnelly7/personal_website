@@ -10,6 +10,9 @@ import {
   Link
 } from "react-router-dom";
 import CompGraphics from './app/CompGraphics';
+import IceClimber from './app/IceClimber';
+import Glance from './app/Glance';
+
 
 class App extends React.Component {
   constructor(props){
@@ -32,6 +35,12 @@ class App extends React.Component {
             <Switch>
               <Route path="/computer_graphics">
                 <CompGraphics />
+              </Route>
+              <Route path="/ice_climber">
+                <IceClimber />
+              </Route>
+              <Route path="/glance">
+                <Glance />
               </Route>
               <Route path="/">
                 <Main></Main>

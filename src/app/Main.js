@@ -6,7 +6,6 @@ import AboutMe from './AboutMe';
 import Skills from './Skills';
 import Projects from './Projects';
 import Resume from './Resume';
-import Blog from './Blog';
 import Contact from './Contact';
 import $ from 'jquery';
 
@@ -119,11 +118,6 @@ class Main extends React.Component {
                         </a>
                         </li>
                         <li>
-                        <a class="s-sidebar__nav-link" href="#blog">
-                            <i class="fa fa-comment"></i><button className="bttn after-from-center">Blog</button>
-                        </a>
-                        </li>
-                        <li>
                         <a class="s-sidebar__nav-link" href="#contact">
                             <i class="fa fa-address-book"></i><button className="bttn after-from-center">Contact</button>
                         </a>
@@ -148,9 +142,6 @@ class Main extends React.Component {
                             </section>
                             <section id="resume">	
                                 <Resume/>
-                            </section>
-                            <section id="blog">	
-                                <Blog/>
                             </section>
                             <section id="contact">	
                                 <Contact/>

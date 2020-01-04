@@ -44,7 +44,7 @@ function CompGraphics() {
           <div class="projContent">
             <img class="banner" src="./Projects/ComputerGraphics/WalkerBanner.png"></img>
             <h4 class='sectionHeader'>Overview</h4>
-            <p> In this series, I applied concepts and algorithms to create, analyze, display, and animate shapes and structures and that let the user design or control them interactively.</p>
+            <p> In this series I applied concepts and algorithms to create, analyze, display, and animate shapes and structures and let the user design or control them interactively.</p>
             <br/>
             <p>The series began by implementing  a cubic Neville and a Bezier curve and applying an animation of dots moving along the curve with uniform, centripetal, and chordal knot spacing.
                The next feature I implemented was a circular arc implementation to visualize a Bezier curve rather than using a linear interpolation. The first arc segment begins at point
