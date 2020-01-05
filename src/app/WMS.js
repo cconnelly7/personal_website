@@ -44,19 +44,23 @@ function WMS() {
           <div class="projContent">
             <img class="banner" src="./Projects/WMS/wmsBanner.png"></img>
             <h4 class='sectionHeader'>Overview</h4>
-            <p>Ice Climber is a video game developed in C for the Gameboy Advance. Due to the low level nature of C as a language, an emphasis was
-               placed on the code architecture such that programming at the level of shuffling bytes could be easily understood.
-               The player begins at the bottom of the mountain and they must climb to the top while avoiding falling ice balls and slippery ice patches. They must reach the top before their health runs out in order to win.
-               </p>
+            <p>Where's My Stuff is an android application that helps users find their belongings after a natural disaster.
+                When opened, the splashscreen is displayed and then three rotating welcome pages are shown. Users can post if they
+                 lost or found items. If the user was affected by the natural disaster, they can request items and other users can donate items to them. 
+            </p>
+            <br/>
+            <img class="banner" src="./Projects/WMS/wms.0.png"></img>
+            <br/>
+            <br/>
+            <p>
+            When the users are reporting or requesting items, they fill out a short description of the item and pick the location in which it was lost. Once they submit their item, it is stored in the database and thus shown on the map.
+            </p>
+            <br/>
             <div class="imgContainer">
-              <img class="image2" src="./Projects/IceClimber/ic.0.png"></img>
-              <img class="image2" src="./Projects/IceClimber/ic.1.png"></img>
-              <img class="image2" src="./Projects/IceClimber/ic.2.png"></img>
-              <img class="image2" src="./Projects/IceClimber/ic.3.png"></img>
-            </div>
-            <div class="imgContainer">
-              <img class="image3" src="./Projects/IceClimber/ic.0.gif"></img>
-              <img class="image3" src="./Projects/IceClimber/ic.1.gif"></img>
+              <img class="image2" src="./Projects/WMS/wms.1.png"></img>
+              <img class="image2" src="./Projects/WMS/wms.2.png"></img>
+              <img class="image2" src="./Projects/WMS/wms.3.png"></img>
+              <img class="image2" src="./Projects/WMS/wms.4.png"></img>
             </div>
           </div>
         </div>
