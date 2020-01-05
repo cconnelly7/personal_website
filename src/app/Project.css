@@ -100,8 +100,44 @@
     margin-bottom: 16px;
     width: 24%;
     height: auto;
+    min-width: 300px;
+}
+.image4 {
+    width: 32%;
+    height: auto;
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    min-width: 300px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.h_iframe {
+    position: relative;
     min-width: 250px;
 }
+  
+.h_iframe .ratio {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.h_iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
 .extraSpace {
     width: 100%;
     height: 100px;

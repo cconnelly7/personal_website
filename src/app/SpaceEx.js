@@ -44,19 +44,20 @@ function SpaceEx() {
           <div class="projContent">
             <img class="banner" src="./Projects/SpaceEx/SpaceExBanner.png"></img>
             <h4 class='sectionHeader'>Overview</h4>
-            <p>Ice Climber is a video game developed in C for the Gameboy Advance. Due to the low level nature of C as a language, an emphasis was
-               placed on the code architecture such that programming at the level of shuffling bytes could be easily understood.
-               The player begins at the bottom of the mountain and they must climb to the top while avoiding falling ice balls and slippery ice patches. They must reach the top before their health runs out in order to win.
-               </p>
-            <div class="imgContainer">
-              <img class="image2" src="./Projects/IceClimber/ic.0.png"></img>
-              <img class="image2" src="./Projects/IceClimber/ic.1.png"></img>
-              <img class="image2" src="./Projects/IceClimber/ic.2.png"></img>
-              <img class="image2" src="./Projects/IceClimber/ic.3.png"></img>
+            <p>Children can travel to the farthest corners of their imagination with this helmet. When they turn the helmet on,
+               an interactive space screen is displayed and they can travel anywhere in the entire universe. The design integrates 
+                technology in a way that jumpstarts a childs imagination rather than closes it off. The helmet is
+                 a space themed augmented reality for children. 
+            </p>
+            <br/>
+            <div className="h_iframe">
+              <img className="ratio" src="http://placehold.it/16x9" />
+              <iframe src="https://www.youtube.com/embed/ORrfclNMtQk" frameBorder="0" allowFullScreen></iframe>
             </div>
             <div class="imgContainer">
-              <img class="image3" src="./Projects/IceClimber/ic.0.gif"></img>
-              <img class="image3" src="./Projects/IceClimber/ic.1.gif"></img>
+              <img class="image4" src="./Projects/SpaceEx/SpaceEx.0.png"></img>
+              <img class="image4" src="./Projects/SpaceEx/SpaceEx.1.png"></img>
+              <img class="image4" src="./Projects/SpaceEx/SpaceEx.2.png"></img>
             </div>
           </div>
         </div>
