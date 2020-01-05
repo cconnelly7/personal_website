@@ -153,6 +153,9 @@
 #prod-menu li.sel a button{
     color:#67b771;
 }
+#prod-menu li.sel a i{
+  color:#67b771;
+}
 #prod-menu li.sel a .bttn:after {
   content: '';
   width: 100%; /*set width to 0 initially, so animates from nothing */
@@ -192,6 +195,7 @@
   align-items: center;
   flex-basis: 90%;
   margin-left: 4em;
+  overflow-x: hidden;
 }
 
 /* Sidebar */
@@ -269,7 +273,7 @@
   display: inline-block;
   width: 4em;
   height: 4em;
-  color: #67b771;
+  color: rgb(70, 70, 70);
 }
 
 .s-sidebar__nav-link > i::before {
@@ -279,11 +283,11 @@
   transform: translate(-50%, -50%);
 }
 .s-sidebar__nav:hover,
-  .s-sidebar__nav:focus,
-  .s-sidebar__trigger:hover + .s-sidebar__nav,
-  .s-sidebar__trigger:focus + .s-sidebar__nav {
-     width: 15em;
-  }
+.s-sidebar__nav:focus,
+.s-sidebar__trigger:hover + .s-sidebar__nav,
+.s-sidebar__trigger:focus + .s-sidebar__nav {
+    width: 15em;
+}
 
 /* Mobile First */
 @media (min-width: 42em) {

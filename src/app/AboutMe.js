@@ -10,7 +10,7 @@ const AboutMe = React.forwardRef((props, ref)=>{
                 <div data-aos='fade-in' className='aboutMe'>About Me</div>
                 <div className='whiteSpace'></div>
             </div>
-            
+            <div className='extraSpace'></div>
             <div className='content'>
                 <div className='text'>
                     <div data-aos='fade-up'>
@@ -18,18 +18,15 @@ const AboutMe = React.forwardRef((props, ref)=>{
                         a Software Engineer. Check out this video to learn more!
                     </div>
                 </div>
-                {/* <div data-id="1" data-aos="fade-up"> */}
                 <div className="wrapper">
                     <div className="h_iframe">
                         <img data-aos='fade-down' className="ratio" src="http://placehold.it/16x9" />
                         <iframe data-aos='fade-down' src="https://www.youtube.com/embed/Nm_f_44ZgLM" frameBorder="0" allowFullScreen></iframe>
                     </div>
                 </div>
-                {/* </div> */}
-
-
             </div>
         </div> 
+        <div className='extraSpace'></div>
         <div className='extraSpace'></div>
         </div>
     )

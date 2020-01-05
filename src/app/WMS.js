@@ -59,8 +59,8 @@ function WMS() {
             <div class="imgContainer">
               <img class="image2" src="./Projects/WMS/wms.1.png"></img>
               <img class="image2" src="./Projects/WMS/wms.2.png"></img>
-              <img class="image2" src="./Projects/WMS/wms.3.png"></img>
               <img class="image2" src="./Projects/WMS/wms.4.png"></img>
+              <img class="image2" src="./Projects/WMS/wms.3.png"></img>
             </div>
           </div>
         </div>
