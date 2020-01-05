@@ -73,7 +73,7 @@ const Projects = React.forwardRef((props, ref)=>{
                             <img class="card_image" src="./Projects/SpaceEx/SpaceEx.jpg"></img>
                             <div class="card_content">
                             <h4 class="card_title">SpaceEx</h4>
-                            <p class="card_text">Interactive kids space helmet that kids wear to explore the universe. </p>
+                            <p class="card_text">Interactive space helmet that kids wear to explore the universe. </p>
                             <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/spaceEx">View</Link></button>
                             </div>
                         </div>

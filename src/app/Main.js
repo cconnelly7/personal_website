@@ -21,7 +21,7 @@ class Main extends React.Component {
 
             // remove prof Pic, name, and job title when the hamburger nav bar appears
             $window.resize(function resize(){
-                if ($window.width() < 799) {
+                if ($window.width() < 1100) {
                     return $profPic.removeClass('type1'), $name.removeClass('name'), $job.removeClass('job'), $name.addClass('textHide'), $job.addClass('textHide')
                 }
         
@@ -81,9 +81,10 @@ class Main extends React.Component {
         return (
             <div class="s-layout">
                 <div class="s-layout__sidebar">
-                <a class="s-sidebar__trigger" href="#0">
+
+                {/* <a class="s-sidebar__trigger" href="#0">
                     <i class="fa fa-bars"></i>
-                </a>
+                </a> */}
 
                 <nav class="s-sidebar__nav" id="prod-menu">
                     <ul>
