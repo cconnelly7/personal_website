@@ -56,9 +56,7 @@ function Grown() {
             <br/>
             <br/>
             <img class="banner" src="./Projects/Grown/GrownBanner.png"></img>
-            <br/>
-            <br/>
-            <img class="banner" src="./Projects/Grown/Context.png"></img>
+            <div class='extraSpace'></div>
             
           </div>
         </div>

@@ -3,7 +3,6 @@
   padding: 0;
   text-decoration: none;
   list-style-type:none;
-  font-family: 'Raleway', sans-serif;
 }
 .row {
   background-color: #e8ecef;
@@ -17,15 +16,6 @@
   flex: 1;
 }
 
-/* .white-column {
-  background-color: #e8ecef;
-  display: inline-block;
-  width: 95%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 .nav-column {
   margin:0px;
   padding: 0px;
@@ -38,14 +28,6 @@
   max-width: 500px;
   z-index: 20;
 }
-
-/* .content-column {
-  float: right;
-  height: 100%;
-  width:80%;
-  overflow: scroll;
-  scroll-behavior: smooth;
-} */
 
 /* CIRCLE WITH PIC */
 .circleBase {
@@ -64,15 +46,13 @@
   background-position:50% 50%;
   background-repeat:no-repeat;
   background-size: cover;
-  /* border: 3px solid whitesmoke; */
 }
 
 .name {
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 8px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   color: black;
   text-align: center;
 }
@@ -80,7 +60,6 @@
   font-size: 14px;
   margin-top: 0px;
   margin-bottom: 30px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 200;
   text-align: center;
   color: black;
@@ -89,7 +68,6 @@
   font-size: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 0;
   color: #d1d5d9;
   text-align: center;
@@ -109,7 +87,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 400;
 
   -webkit-transition: all ease 0.5s;
@@ -133,8 +110,8 @@
   transition: width 0.2s 0.1s ease-in-out; 
 }
 .bttn:hover:after {
-    /* whatever width you want the underline to animate to */
-    width: 100%; 
+  /* whatever width you want the underline to animate to */
+  width: 100%; 
 }
 
 .after-from-center:after {   
@@ -150,16 +127,16 @@
   position: absolute;
 }
 
-#prod-menu li.sel a button{
-    color:#67b771;
+#prod-menu li.sel a button {
+  color:#67b771;
 }
-#prod-menu li.sel a i{
+#prod-menu li.sel a i {
   color:#67b771;
 }
 #prod-menu li.sel a .bttn:after {
   content: '';
   width: 100%; /*set width to 0 initially, so animates from nothing */
-  height: 2px; /*height of underline*/
+  height: 2px;
   background: #67b771;
   display: block; 
   transition: width 0.2s 0.1s ease-in-out; 
@@ -177,9 +154,6 @@
 #prod-menu li.sel a .constrain-after:after {
   position: absolute;
 }
-
-
-
 
 /* Layout */
 .s-layout {
@@ -286,29 +260,29 @@
 .s-sidebar__nav:focus,
 .s-sidebar__trigger:hover + .s-sidebar__nav,
 .s-sidebar__trigger:focus + .s-sidebar__nav {
-    width: 15em;
+  width: 15em;
 }
 
 /* Mobile First */
 @media (min-width: 42em) {
 
   .s-layout__content {
-     margin-left: 4em;
+    margin-left: 4em;
   }
   .s-sidebar__trigger {
-     display: none
+    display: none
   }
   
   .s-sidebar__nav {
-     width: 4em;
-     left: 0;
+    width: 4em;
+    left: 0;
   }
   
   .s-sidebar__nav:hover,
   .s-sidebar__nav:focus,
   .s-sidebar__trigger:hover + .s-sidebar__nav,
   .s-sidebar__trigger:focus + .s-sidebar__nav {
-     width: 15em;
+    width: 15em;
   }
   
 }
@@ -321,11 +295,11 @@
     display: none
  }
   .s-layout__content {
-     margin-left: 15em;
+    margin-left: 15em;
   }
   
   .s-sidebar__nav {
-     width: 15em;
+    width: 15em;
   }
 
   .s-sidebar__nav-link > i {

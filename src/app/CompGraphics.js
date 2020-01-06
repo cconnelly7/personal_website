@@ -79,6 +79,7 @@ function CompGraphics() {
               <img class="image3" src="./Projects/ComputerGraphics/cg.3.0.gif"></img>
               <img class="image3" src="./Projects/ComputerGraphics/cg.3.1.gif"></img>
             </div>
+            <div class='extraSpace'></div>
           </div>
         </div>
       </div>

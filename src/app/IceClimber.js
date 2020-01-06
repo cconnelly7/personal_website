@@ -58,6 +58,7 @@ function IceClimber() {
               <img class="image3" src="./Projects/IceClimber/ic.0.gif"></img>
               <img class="image3" src="./Projects/IceClimber/ic.1.gif"></img>
             </div>
+            <div class='extraSpace'></div>
           </div>
         </div>
       </div>

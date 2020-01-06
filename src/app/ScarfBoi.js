@@ -44,15 +44,20 @@ function ScarfBoi() {
           <div class="projContent">
             <img class="banner" src="./Projects/Scarfboi/ScarfBoiBanner.png"></img>
             <h4 class='sectionHeader'>Overview</h4>
-            <p>Ice Climber is a video game developed in C for the Gameboy Advance. Due to the low level nature of C as a language, an emphasis was
-               placed on the code architecture such that programming at the level of shuffling bytes could be easily understood.
-               The player begins at the bottom of the mountain and they must climb to the top while avoiding falling ice balls and slippery ice patches. They must reach the top before their health runs out in order to win.
+            <p>The Legend of Scarf Boi is a video game developed in Unity 3D using C#. Play as Scarf Boi as he
+                attempts to free himself from the confinements of a dreamworld from which he was created. In order to escape, he
+                must avoid the Dreamcatchers, steal goodness, and ultimately turn the dreams he enters into nightmares.
             </p>
-            
-            <div class="imgContainer">
-              <img class="image3" src="./Projects/IceClimber/ic.0.gif"></img>
-              <img class="image3" src="./Projects/IceClimber/ic.1.gif"></img>
+            <br/>
+            <div className="h_iframe">
+              <img className="ratio" src="http://placehold.it/16x9" />
+              <iframe src="https://www.youtube.com/embed/XM-Yt4_J-2Q" frameBorder="0" allowFullScreen></iframe>
             </div>
+            <br/>
+            <h4 class='sectionHeader'>Features/Tech Used</h4>
+            <p>Mapping animations to individual body parts, player detection for enemy AI, state machine, Unity 3D, C#.
+            </p>
+            <div class='extraSpace'></div>
           </div>
         </div>
       </div>

@@ -59,6 +59,7 @@ function SpaceEx() {
               <img class="image4" src="./Projects/SpaceEx/SpaceEx.1.png"></img>
               <img class="image4" src="./Projects/SpaceEx/SpaceEx.2.png"></img>
             </div>
+            <div class='extraSpace'></div>
           </div>
         </div>
       </div>

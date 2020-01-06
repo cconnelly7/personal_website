@@ -20,7 +20,8 @@ const Skills = React.forwardRef((props, ref)=>{
                             <span class="circ"data-aos="zoom-out"></span>
                             <span class="flag" >Web Dev/React</span>
                         </div>
-                    <   div class="desc" data-aos="fade-left" >Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident. </div>
+                        <div class="desc" data-aos="fade-left" >From working at NCR and through school at GT, I have gained skills 
+                        with React, CSS, HTML, jQuery, and JavaScript. </div>
                     </div>
                 </li>
 
@@ -28,10 +29,11 @@ const Skills = React.forwardRef((props, ref)=>{
                     <div class="direction-l">
                         <div class="flag-wrapper">
                             <span class="circ" data-aos="zoom-out" ></span>
-                            <span class="flag">App Dev/React-Native</span>
+                            <span class="flag">App Dev/React Native</span>
                         </div>
                         <span class="time-wrapper" data-aos="fade-left"><span class="time">Dec 2014</span></span>
-                    <div class="desc" data-aos="fade-right">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+                    <div class="desc" data-aos="fade-right">This past semester I was working on a project in React Native for the Innovation Lab at NCR. 
+                    While there, I built up my skills with JavaScript, redux, their APIs and services used, React Native, and CSS. I also worked on a project in React Native while working with Verizon.</div>
                     </div>
                 </li>
 
@@ -40,9 +42,10 @@ const Skills = React.forwardRef((props, ref)=>{
                         <span class="time-wrapper" data-aos="fade-right"><span class="time">July 2014</span></span>
                         <div class="flag-wrapper">
                             <span class="circ" data-aos="zoom-out"></span>
-                            <span class="flag" data-aos="fade-left">Android/Java</span>
+                            <span class="flag" data-aos="fade-left">C#/Unity 3D</span>
                         </div>
-                    <div class="desc" data-aos="fade-left">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
+                    <div class="desc" data-aos="fade-left"> 
+                    </div>
                     </div>
                 </li>
 
@@ -50,10 +53,11 @@ const Skills = React.forwardRef((props, ref)=>{
                     <div class="direction-l">
                         <div class="flag-wrapper">
                             <span class="circ" data-aos="zoom-out" ></span>
-                            <span class="flag">C#/Unity 3D</span> {/* C#/Unity 3D */}
+                            <span class="flag">Android/Java</span>
                         </div>
                         <span class="time-wrapper" data-aos="fade-left"><span class="time">Dec 2014</span></span>
-                    <div class="desc" data-aos="fade-right">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+                    <div class="desc" data-aos="fade-right">Java was my first computer language I learned indepth and I have worked on projects in Android Studio for
+                    hackathons, class projects, and during my time with Verizon. This is where I began gaining skills with Java as an Object Oriented language and with basic application development practices.</div>
                     </div>
                 </li>
             </ul>

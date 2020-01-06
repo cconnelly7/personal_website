@@ -58,6 +58,7 @@ function Glance() {
             <img class="image1" src="./Projects/Glance/glance.gif"></img>
             
           </div>
+          <div class='extraSpace'></div>
         </div>
       </div>
     )
