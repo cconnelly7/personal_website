@@ -44,11 +44,12 @@ function SpaceEx() {
           <div class="projContent">
             <img class="banner" src="./Projects/SpaceEx/SpaceExBanner.png"></img>
             <h4 class='sectionHeader'>Overview</h4>
-            <p>Children can travel to the farthest corners of their imagination with this helmet. When they turn the helmet on,
+            <p class='feats'>Children can travel to the farthest corners of their imagination with this helmet. When they turn the helmet on,
                an interactive space screen is displayed and they can travel anywhere in the entire universe. The design integrates 
                 technology in a way that jumpstarts a childs imagination rather than closes it off. The helmet is
                  a space themed augmented reality for children. 
             </p>
+            <br/>
             <br/>
             <div className="h_iframe">
               <img className="ratio" src="http://placehold.it/16x9" />

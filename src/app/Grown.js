@@ -44,13 +44,18 @@ function Grown() {
           <div class="projContent">
             <img class="banner" src="./Projects/Grown/grown.1.png"></img>
             <h4 class='sectionHeader'>Overview</h4>
-            <p> Grown is a floor lamp standing 5 feet and 7 inches tall. Its style was inspired by Pablo Picasso - using cubism and an observation of how physical space and linear time relate to one another.
+            <p class='feats'> Grown is a floor lamp standing 5 feet and 7 inches tall. Its style was inspired by Pablo Picasso - using cubism and an observation of how physical space and linear time relate to one another.
               Picasso saw that space unfolds in time. He conducted many motion studies to present this understanding to his peers. 
             </p>
+            <br/>
+            <br/>
             <img class="image1" src="./Projects/Grown/MotionStudy.png"></img>
-            <p> The lamp was constructed by first plasma cutting metal strips out of sheet metal. The strips of metal were then bent into triangles and welded together.
+            <br/>
+            <br/>
+            <p class='feats'> The lamp was constructed by first plasma cutting metal strips out of sheet metal. The strips of metal were then bent into triangles and welded together.
                The base was made from CNC cutting wood.
             </p>
+            <br/>
             <br/>
             <img class="banner" src="./Projects/Grown/grown.0.png"></img>
             <br/>

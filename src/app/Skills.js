@@ -44,7 +44,7 @@ const Skills = React.forwardRef((props, ref)=>{
                             <span class="circ" data-aos="zoom-out"></span>
                             <span class="flag" data-aos="fade-left">C#/Unity 3D</span>
                         </div>
-                    <div class="desc" data-aos="fade-left"> 
+                    <div class="desc" data-aos="fade-left"> From developing games with the Unity game engine, I have skills with game AI, state machines, player animations, C#, and game design principles. 
                     </div>
                     </div>
                 </li>
