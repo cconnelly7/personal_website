@@ -92,7 +92,7 @@ function CompGraphics() {
             </div>
             <h4 class='sectionHeader'>Features/Tech Used</h4>
             <p class='feats'>Programming and graphics were done in <div className='emphasize'>Processing</div>, an open-source graphical library and IDE. Graphics interfaces such as <div className='emphasize'>OpenGL </div> 
-            and <div className='emphasize'>shaders</div> were used. Implemented geometric constructions that created or operated on various geometric entities such as points, edges, triangles, and patterns, and motions such as translations and rotations.
+            and <div className='emphasize'>shaders</div> were used.
             </p>
             <div class='extraSpace'></div>
           </div>

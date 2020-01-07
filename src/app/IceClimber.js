@@ -61,9 +61,9 @@ function IceClimber() {
               <img class="image3" src="./Projects/IceClimber/ic.1.gif"></img>
             </div>
             <h4 class='sectionHeader'>Features/Tech Used</h4>
-            {/* <p class='feats'>Programming and graphics were done in <div className='emphasize'>Processing</div>, an open-source graphical library and IDE. Graphics interfaces such as <div className='emphasize'>OpenGL </div> 
-            and <div className='emphasize'>shaders</div> were used. Implemented geometric constructions that created or operated on various geometric entities such as points, edges, triangles, and patterns, and motions such as translations and rotations.
-            </p> */}
+            <p class='feats'>Coding was done in <div className='emphasize'>C</div>. Concepts such as a <div className='emphasize'>state machine</div>, <div className='emphasize'>collision detection</div>, <div className='emphasize'>collision maps</div>, and <div className='emphasize'>DMA</div> were applied.
+            Special topics such as <div className='emphasize'>pallet swapping </div>and <div className='emphasize'>alpha blending</div> were implemented. 
+            </p>
             <div class='extraSpace'></div>
           </div>
         </div>

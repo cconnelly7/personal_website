@@ -68,6 +68,10 @@ function Glance() {
             <br/>
             <br/>
             <img class="image1" src="./Projects/Glance/glance.gif"></img>
+          <h4 class='sectionHeader'>Features/Tech Used</h4>
+            <p class='feats'>Glance was build using <div className='emphasize'>Arduino</div> with programming done in <div className='emphasize'>C++</div>. 
+            It featured a distance sensor, an LED light, and an on/off button. 
+            </p>
           </div>
           <div class='extraSpace'></div>
         </div>

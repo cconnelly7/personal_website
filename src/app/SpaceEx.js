@@ -60,6 +60,9 @@ function SpaceEx() {
               <img class="image4" src="./Projects/SpaceEx/SpaceEx.1.png"></img>
               <img class="image4" src="./Projects/SpaceEx/SpaceEx.2.png"></img>
             </div>
+            <h4 class='sectionHeader'>Features/Tech Used</h4>
+            <p class='feats'>SpaceEx is a AR toy designed for children. If it were built, it would need to include two plastic screens with an OLED screen sandwiched between them, a processor such as the Qualcomm snapdragon, and a USBC port for charging.
+            </p>
             <div class='extraSpace'></div>
           </div>
         </div>
