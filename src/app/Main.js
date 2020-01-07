@@ -81,11 +81,6 @@ class Main extends React.Component {
         return (
             <div class="s-layout">
                 <div class="s-layout__sidebar">
-
-                {/* <a class="s-sidebar__trigger" href="#0">
-                    <i class="fa fa-bars"></i>
-                </a> */}
-
                 <nav class="s-sidebar__nav" id="prod-menu">
                     <ul>
                         <div class="wrapper">

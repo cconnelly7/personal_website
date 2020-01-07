@@ -11,7 +11,7 @@ const Projects = React.forwardRef((props, ref)=>{
     return (
         <div className='box3' >
             <div className='content'>
-                <div data-aos='fade-in' className='sectionHeader'>Projects</div>
+                <div data-aos='fade-in' className='sectionTitle'>Projects</div>
                 <div className='whiteSpace'></div>
             </div>
 
@@ -93,8 +93,8 @@ const Projects = React.forwardRef((props, ref)=>{
                             <img class="card_image" src="./Projects/Web/web.jpg"></img>
                             <div class="card_content">
                             <h4 class="card_title">This Website</h4>
-                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/glance">View</Link></button>
+                            <p class="card_text">Portfolio website coded from scratch in React</p>
+                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/thisWebsite">View</Link></button>
                             </div>
                         </div>
                     </li>

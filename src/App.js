@@ -16,6 +16,7 @@ import Grown from './app/Grown';
 import WMS from './app/WMS';
 import ScarfBoi from './app/ScarfBoi';
 import SpaceEx from './app/SpaceEx';
+import Web from './app/Web';
 
 
 class App extends React.Component {
@@ -57,6 +58,9 @@ class App extends React.Component {
               </Route>
               <Route path="/grown">
                 <Grown />
+              </Route>
+              <Route path="/thisWebsite">
+                <Web />
               </Route>
               <Route path="/">
                 <Main></Main>

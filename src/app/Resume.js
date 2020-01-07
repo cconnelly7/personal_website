@@ -6,7 +6,7 @@ const Resume = React.forwardRef((props, ref)=>{
     return (
         <div className='box2' >
             <div className='content'>
-                <div data-aos='fade-in' className='sectionHeader'>Resume</div>
+                <div data-aos='fade-in' className='sectionTitle'>Resume</div>
                 <div className='whiteSpace'></div>
             </div>
             <div className='moreSpace'></div>

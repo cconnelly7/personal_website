@@ -1,13 +1,13 @@
 import React from 'react';
 import './ContentPanel.css';
-import './Skills.css'
+import './Skills.css';
 
 const Skills = React.forwardRef((props, ref)=>{
 
     return (
         <div className='box3'>
             <div className='content'>
-                <div data-aos='fade-in' className='sectionHeader'>Skills</div>
+                <div data-aos='fade-in' className='sectionTitle'>Skills</div>
                 <div className='whiteSpace'></div>
             </div>
             <div className='moreSpace'></div>
