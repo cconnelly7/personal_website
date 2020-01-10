@@ -30,20 +30,30 @@ body.light-mode .color {
   height: 100px;
 }
 
-.text {
+body.light-mode .text {
     flex-basis: 30%;
     margin-left: auto;
     margin-right: auto;
     min-width: 250px;
     padding-top: 50px;
+    color: rgb(30, 30, 30);
 }
+body.dark-mode .text {
+  flex-basis: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 250px;
+  padding-top: 50px;
+  color: gray;
+}
+
 
 .whiteSpace {
     flex-basis: 60%;
     margin: auto;
 }
 
-.aboutMe {
+body.light-mode .aboutMe {
   font-size: 18px;
   font-weight: 400;
   color: gray;
@@ -51,7 +61,15 @@ body.light-mode .color {
   flex-basis: 30%;
   min-width: 150px;
   margin: auto;
-  
+}
+body.dark-mode .aboutMe {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(107, 107, 107);
+  align-self: flex-start;
+  flex-basis: 30%;
+  min-width: 150px;
+  margin: auto;
 }
 
 .wrapper {

@@ -8,7 +8,7 @@ import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
 import $ from 'jquery';
-import DarkModeToggle from './DarkModeToggle';
+import DarkModeToggle from '../App';
 
 class Main extends React.Component {
     render () {
@@ -80,51 +80,51 @@ class Main extends React.Component {
         });
 
         return (
-            <div class="s-layout">
-                <div class="s-layout__sidebar">
+            <div class="s-layout color">
+                <div class="s-layout__sidebar color">
                 <nav class="s-sidebar__nav colors" id="prod-menu">
                     <ul>
                     <DarkModeToggle />
                         <div class="wrapper">
                             <div className="circleBase type1" id="profPic"></div>
-                            <h1 className="name" id="name">Chianne Connelly</h1>
-                            <h1 className="job" id="job">Software Engineer</h1>
+                            <h1 className="name nameColor" id="name">Chianne Connelly</h1>
+                            <h1 className="job nameColor" id="job">Software Engineer</h1>
                         </div>
                         <li>
                         <a class="s-sidebar__nav-link" href="#home">
-                            <i class="fa fa-home"></i><button className="bttn after-from-center" >Home</button>
+                            <i class="fa fa-home"></i><button className="bttn after-from-center bttnColor" >Home</button>
                         </a>
                         </li>
                         <li>
                         <a class="s-sidebar__nav-link" href="#about">
-                            <i class="fa fa-user"></i><button className="bttn after-from-center">About Me</button>
+                            <i class="fa fa-user"></i><button className="bttn after-from-center bttnColor">About Me</button>
                         </a>
                         </li>
                         <li>
                         <a class="s-sidebar__nav-link" href="#skills">
-                            <i class="fa fa-plus-square"></i><button className="bttn after-from-center">Skills</button>
+                            <i class="fa fa-plus-square"></i><button className="bttn after-from-center bttnColor">Skills</button>
                         </a>
                         </li>
                         <li>
                         <a class="s-sidebar__nav-link" href="#projects">
-                            <i class="fa fa-cubes"></i><button className="bttn after-from-center">Projects</button>
+                            <i class="fa fa-cubes"></i><button className="bttn after-from-center bttnColor">Projects</button>
                         </a>
                         </li>
                         <li>
                         <a class="s-sidebar__nav-link" href="#resume">
-                            <i class="fa fa-file"></i><button className="bttn after-from-center">Resume</button>
+                            <i class="fa fa-file"></i><button className="bttn after-from-center bttnColor">Resume</button>
                         </a>
                         </li>
                         <li>
                         <a class="s-sidebar__nav-link" href="#contact">
-                            <i class="fa fa-address-book"></i><button className="bttn after-from-center">Contact</button>
+                            <i class="fa fa-address-book"></i><button className="bttn after-from-center bttnColor">Contact</button>
                         </a>
                         </li>
                     </ul>
                 </nav>
                 </div>
 
-                <div className='s-layout__content'>
+                <div className='s-layout__content color'>
                         <ContentPanel >		
                             <section id="home">	
                                 <HomeScreen />

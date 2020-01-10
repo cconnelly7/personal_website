@@ -3,7 +3,6 @@
   height: 50px;
   display: inline-block;
   margin-top: 4px;
-  margin-bottom: 12px;
   z-index: 500;
 }
 .logo2 {
@@ -11,7 +10,6 @@
   height: 50px;
   display: inline-block;
   margin-top: 4px;
-  margin-bottom: 12px;
   z-index: 15;
 }
 .logo3 {
@@ -21,7 +19,6 @@
   margin-top: 4px;
   margin-left: 4px;
   margin-right: 4px;
-  margin-bottom: 12px;
   z-index: 15;
 }
 .circ{
@@ -40,6 +37,12 @@
   left: 0; 
   width: 0; 
   height: 0;
+}
+body.light-mode .textColor {
+  color: rgb(70, 70, 70);
+}
+body.dark-mode .textColor {
+  color: rgb(107, 107, 107);
 }
 
 .timeline {
@@ -60,12 +63,22 @@
   width: 2px;
   height: 100%;
   margin-left: -1px;
+}
+body.light-mode .timelineColor:before {
   background: rgb(213,213,213);
   background: -moz-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
   background: -webkit-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
   background: -o-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
   background: -ms-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
   background: linear-gradient(to bottom, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+}
+body.dark-mode .timelineColor:before {
+  background: #1e2020;
+  background: -moz-linear-gradient(top, rgba(30,32,32,0) 0%, rgb(30,32,32) 8%, rgb(30,32,32) 92%, rgba(30,32,32,0) 100%);
+  background: -webkit-linear-gradient(top, rgba(30,32,32,0) 0%, rgb(30,32,32) 8%, rgb(30,32,32) 92%, rgba(30,32,32,0) 100%);
+  background: -o-linear-gradient(top, rgba(30,32,32,0) 0%, rgb(30,32,32) 8%, rgb(30,32,32) 92%, rgba(30,32,32,0) 100%);
+  background: -ms-linear-gradient(top, rgba(30,32,32,0) 0%, rgb(30,32,32) 8%, rgb(30,32,32) 92%, rgba(30,32,32,0) 100%);
+  background: linear-gradient(to bottom, rgba(30,32,32,0) 0%, rgb(30,32,32) 8%, rgb(30,32,32) 92%, rgba(30,32,32,0) 100%);
 }
 
 .timeline li {
@@ -114,10 +127,20 @@
   margin-bottom: 20px;
 }
 
-.flag {
+body.light-mode .flag {
   position: relative;
   display: inline;
-  background: rgb(255,255,255);
+  background: #f2f5f8;
+  font-weight: 600;
+  z-index: 15;
+  padding: 6px 10px;
+  text-align: left;
+  border-radius: 5px;
+}
+body.dark-mode .flag {
+  position: relative;
+  display: inline;
+  background: #1e2020;
   font-weight: 600;
   z-index: 15;
   padding: 6px 10px;
@@ -135,7 +158,6 @@
   width: 0;
   margin-left: -8px;
   border: solid transparent;
-  border-bottom-color: rgb(255,255,255);
   border-width: 8px;
   pointer-events: none;
 }
@@ -152,14 +174,24 @@
   box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
 }
 
-.desc {
+body.light-mode .desc {
   position: relative;
-  margin: 0em 0 0 0;
+  border-radius: 5px;
+  background: #f2f5f8;
   padding: 1em;
-  background: rgb(254,254,254);
-  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-  box-shadow: 0 0 1px rgba(0,0,0,0.20);
+  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.10);
+  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.10);
+  box-shadow: 0 0 1px rgba(0,0,0,0.10);
+  z-index: 15;
+}
+body.dark-mode .desc {
+  position: relative;
+  border-radius: 5px;
+  background: #1e2020;
+  padding: 1em;
+  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.10);
+  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.10);
+  box-shadow: 0 0 1px rgba(0,0,0,0.10);
   z-index: 15;
 }
 
@@ -167,7 +199,6 @@
 .direction-r .desc {
   position: relative;
   margin: 0em 0em 0 0em;
-  padding: 1em;
   z-index: 15;
 }
 
@@ -220,25 +251,6 @@
   
   .flag {
     font-size: 18px;
-  }
-
-  .direction-l .flag:after {
-    left: auto;
-    right: -16px;
-    top: 50%;
-    margin-top: -8px;
-    border: solid transparent;
-    border-left-color: rgb(254,254,254);
-    border-width: 8px;
-  }
-
-  .direction-r .flag:after {
-    top: 50%;
-    margin-top: -8px;
-    border: solid transparent;
-    border-right-color: rgb(254,254,254);
-    border-width: 8px;
-    left: -8px;
   }
 
   .time-wrapper {

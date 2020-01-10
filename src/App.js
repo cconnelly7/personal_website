@@ -17,6 +17,7 @@ import WMS from './app/WMS';
 import ScarfBoi from './app/ScarfBoi';
 import SpaceEx from './app/SpaceEx';
 import Web from './app/Web';
+import DarkModeToggle from './app/DarkModeToggle'
 
 
 class App extends React.Component {
@@ -31,6 +32,7 @@ class App extends React.Component {
   render(){
     return(
       <Router>
+      <DarkModeToggle className='hide'/>
         <div>
             <nav>
               <div className="App">

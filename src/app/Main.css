@@ -4,10 +4,6 @@
   text-decoration: none;
   list-style-type:none;
 }
-.row {
-  background-color: #e8ecef;
-  width: 100%;
-}
 
 .column {
   display: flex;
@@ -40,8 +36,13 @@
   margin-top: 0px;
   margin-bottom: 8px;
   font-weight: 700;
-  color: black;
   text-align: center;
+}
+body.light-mode .nameColor {
+  color: rgb(70, 70, 70);
+}
+body.dark-mode .nameColor {
+  color: rgb(107, 107, 107);
 }
 .job {
   font-size: 14px;
@@ -69,18 +70,28 @@
   outline: none;
   display: block;
   font-size: 18px;
-  color: rgb(70, 70, 70);
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   font-weight: 400;
-
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
-.bttn:hover {
+body.light-mode .bttnColor {
+  color: rgb(70, 70, 70);
+}
+body.dark-mode .bttnColor {
+  color: rgb(107, 107, 107);
+}
+body.light-mode .bttnColor:hover {
+  color: black;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+body.dark-mode .bttnColor:hover {
   color: black;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
@@ -147,7 +158,12 @@
   display: flex;
   width: 100%;
   min-height: 100vh;
-  background-color: #e8ecef;
+}
+body.dark-mode .color {
+  background: #121313;
+}
+body.light-mode .color {
+  background: #e8ecef;
 }
 
 .s-layout__content {
@@ -231,14 +247,23 @@ body.dark-mode .colors {
   transform: translateY(-50%);
 }
 
-.s-sidebar__nav-link > i {
+body.light-mode .s-sidebar__nav-link > i {
   position: absolute;
   top: -0.5em;
   left: 0;
   display: inline-block;
   width: 4em;
   height: 4em;
-  color: rgb(70, 70, 70);
+  color: #d1d5d9;
+}
+body.dark-mode .s-sidebar__nav-link > i {
+  position: absolute;
+  top: -0.5em;
+  left: 0;
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  color: #2b2c2c;
 }
 
 .s-sidebar__nav-link > i::before {

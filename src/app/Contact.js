@@ -4,7 +4,7 @@ import './ContentPanel.css';
 const Contact = React.forwardRef((props, ref)=>{
 
     return (
-        <div className='box2'>
+        <div className='box2 color'>
             <div className='content'>
                 <div data-aos='fade-in' className='sectionTitle'>Contact</div>
                 <div className='whiteSpace'></div>

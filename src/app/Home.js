@@ -29,7 +29,6 @@ class HomeScreen extends React.Component {
         return (
             <div>
                 <p id="webPic" className='box' ref={this.props.myref}>
-                    <div className='extraSpace'></div>
                     <h2 className="header fade-up">Hello!</h2>
                     <h3 className="header fade-up">I'm Chianne</h3>
                 </p> 

@@ -2,13 +2,18 @@
     display: flex;
     width: 100%;
     /* height: 100vh; */
-    background-color: #e8ecef;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
     padding-top: 50px;
+}
+body.dark-mode .color {
+  background: #121313;
+}
+body.light-mode .color {
+  background: #e8ecef;
 }
 .sectionHeader {
     font-size: 18px;
@@ -120,14 +125,23 @@ h1 {
   }
 }
 
-.card {
-    background-color: white;
+body.light-mode .card {
+    background-color: #f2f5f8;
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
     display: flex;
     width:100%;
     flex-direction: column;
     overflow: hidden;
+}
+body.dark-mode .card {
+  background-color: #1e2020;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .card_content {
@@ -157,7 +171,7 @@ h1 {
 
 
 /* Filter buttons style */
-.filterBtn {
+body.light-mode .filterBtn {
   background-color: #d1d5d9;
   text-decoration: none;
   color: gray;
@@ -170,20 +184,55 @@ h1 {
   display: inline-flex;
   align-items: center;
 }
+body.dark-mode .filterBtn {
+  background-color: #2b2c2c;
+  text-decoration: none;
+  color: gray;
+  font-weight: 600;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
 
-.filterBtn:hover {
-  background-color: white;
+body.light-mode .filterBtn:hover {
+  background-color: #f2f5f8;
+  color: #67b771;
+  box-shadow: 0;
+}
+body.dark-mode .filterBtn:hover {
+  background-color: black;
   color: #67b771;
   box-shadow: 0;
 }
 
-.filterBtnActive {
+body.light-mode .filterBtnActive {
   background-color: #67b771;
-  color: white;
+  color: #f2f5f8;
 }
-.tag {
+body.dark-mode .filterBtnActive {
   background-color: #67b771;
-  color: white;
+  color: black;
+}
+
+body.light-mode .tag {
+  background-color: #67b771;
+  color: #f2f5f8;
+  padding: 3px;
+  font-weight: 200;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+}
+body.dark-mode .tag {
+  background-color: #67b771;
+  color: black;
   padding: 3px;
   font-weight: 200;
   font-size: 14px;

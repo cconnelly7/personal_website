@@ -3,7 +3,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #d1d5d9;
     color: rgb(70, 70, 70);
     z-index: 1000;
     height: 200px;
@@ -13,6 +12,10 @@
     text-align:center;
     line-height:160px;
 }
+.headerColor {
+    background: #d1d5d9;
+}
+/* background: #2b2c2c; */
 
 .projPic.shrink {
     height: 100px;
@@ -55,11 +58,16 @@
 }
 .projBg {
     height:auto;
-    background:#e8ecef;
     width:100%;
     padding-top: 220px;
     display: inline-block;
     text-align: center;
+}
+body.light-mode .projBgColor {
+    background:#e8ecef;
+}
+body.dark-mode .projBg {
+    background:#121313;
 }
 .projContent {
     width: 65%;
