@@ -8,6 +8,7 @@ import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
 import $ from 'jquery';
+import DarkModeToggle from './DarkModeToggle';
 
 class Main extends React.Component {
     render () {
@@ -76,13 +77,14 @@ class Main extends React.Component {
 					}
 				}
 			});
-		});
+        });
 
         return (
             <div class="s-layout">
                 <div class="s-layout__sidebar">
-                <nav class="s-sidebar__nav" id="prod-menu">
+                <nav class="s-sidebar__nav colors" id="prod-menu">
                     <ul>
+                    <DarkModeToggle />
                         <div class="wrapper">
                             <div className="circleBase type1" id="profPic"></div>
                             <h1 className="name" id="name">Chianne Connelly</h1>

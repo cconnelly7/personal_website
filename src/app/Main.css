@@ -16,19 +16,6 @@
   flex: 1;
 }
 
-.nav-column {
-  margin:0px;
-  padding: 0px;
-  float: left;
-  background-color: #d1d5d9;
-  height: 100vh;
-  position: fixed;
-  width:19%;
-  min-width: 95px;
-  max-width: 500px;
-  z-index: 20;
-}
-
 /* CIRCLE WITH PIC */
 .circleBase {
   border-radius: 50%;
@@ -200,6 +187,13 @@
   color: rgba(255, 255, 255, 0.7);
   z-index: 500;
 }
+body.light-mode .colors {
+  background: #d1d5d9;
+}
+body.dark-mode .colors {
+  background: #2b2c2c;
+}
+
 .s-sidebar__nav .wrapper{
   visibility: show;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import $ from 'jquery';
 import './Projects.css';
 import {
@@ -6,8 +6,94 @@ import {
     Link
   } from "react-router-dom";
 
-const Projects = React.forwardRef((props, ref)=>{
+  export default class Projects extends Component {
+    constructor(props) {
+        super(props);
+        this.filters = ['Unity', 'Firebase', 'Web', 'Android', 'Java', 'C#', 'React', 'HTML/CSS/JS', 'Android SDK', 'clear'];
+        this.projects = [
+          {
+            name: 'Computer Graphics Series',
+            tags: ['React', 'HTML/CSS/JS', 'Web/Android/iOS', 'Firebase'],
+            link: '/computer_graphics',
+            description: 'Animated shapes and structures that the user can manipulate.',
+            style: "./Projects/ComputerGraphics/Walker.jpg",
+          },
+          {
+            name: 'Ice Climber',
+            tags: ['Android SDK', 'Java', 'Android'],
+            link: '/ice_climber',
+            description: 'Video game developed for the Gameboy Advance.',
+            style: "./Projects/IceClimber/ice.jpg",
+          },
+          {
+            name: 'Glance',
+            tags: ['Corona SDK', 'Lua', 'Android'],
+            link: '/glance',
+            description: 'Smart product to keep users safe on their walk home.',
+            style: "./Projects/Glance/glance0.jpg",
+          },
+          {
+            name: 'Where\'s My Stuff App',
+            tags: ['Unity', 'C#', 'Android', 'Firebase'],
+            link: '/wms',
+            description: 'Application to help users find their belongings after a natural disaster.',
+            style: "./Projects/WMS/wms.jpg",
+          },
+          {
+            name: 'The Legend of Scarf Boi',
+            tags: ['Unity', 'C#', 'Oculus'],
+            link: '/scarfboi',
+            description: 'Video game about a boy who turns dreams into nightmares.',
+            style: "./Projects/Scarfboi/Scarfboi.jpg",
+          },
+          {
+            name: 'SpaceEx',
+            tags: ['Android SDK', 'Java', 'Android', 'Firebase'],
+            link: '/spaceEx',
+            description: 'Interactive space helmet that kids wear to explore the universe.',
+            style: "./Projects/SpaceEx/SpaceEx.jpg",
+          },
+          {
+            name: 'Grown Lamp Design',
+            tags: ['Unity', 'C#', 'Android'],
+            link: '/grown',
+            description: 'Floor lamp design to light up any space.',
+            style: "./Projects/Grown/Grown.jpg",
+          },
+          {
+            name: 'This Website',
+            tags: ['React', 'HTML/CSS/JS', 'Web'],
+            link: '/thisWebsite',
+            description: 'Built this website from scratch in React',
+            style: "./Projects/Web/web.jpg",
+          }
+        ];
+        this.state = {filter: 'clear', filteredProjects: this.projects};
+      }
+    
+      filter(word) {
+          console.log('in filter function with ' + word);
+        if (word == 'clear' || word == this.state.filter) {
+          this.setState({filteredProjects: this.projects, filter: 'clear'});
+        } else {
+          this.setState({filter: word});
+          var list = [];
+          for (var i = 0; i < this.projects.length; i++) {
+            var found = false;
+            for (var j = 0; j < this.projects[i].tags.length; j++) {
+              if (this.projects[i].tags[j].indexOf(word) != -1) {
+                found = true;
+              }
+            }
+            if (found) {
+              list.push(this.projects[i]);
+            }
+          }
+          this.setState({filteredProjects: list});
+        }
+      }
 
+    render () {
     return (
         <div className='box3' >
             <div className='content'>
@@ -17,90 +103,28 @@ const Projects = React.forwardRef((props, ref)=>{
 
             <div className='moreSpace'></div>
 
+            <div className='filter'>Filters:
+                {this.filters.map((filter, i) => {return (
+                    <a key={i} className={this.state.filter==filter?"filterBtn filterBtnActive":"filterBtn"} onClick={()=>{this.filter(filter)}}>{filter}</a>
+                );})}
+            </div>
+
                 <ul class="cards">
-                    <li class="cards_item">
-                        <div data-aos="zoom-in-left" class="card">
-                            <img class="card_image" src="./Projects/ComputerGraphics/Walker.jpg"></img>
+                    {this.state.filteredProjects.map((project, i) => {return (
+                        <li class="cards_item">
+                        <a href={project.link} key={i} data-aos="zoom-in-left" class="card">
+                            <img class="card_image" src={project.style}></img>
                             <div class="card_content">
-                            <h4 class="card_title">Computer Graphics Series</h4>
-                            <p class="card_text">Animated shapes and structures that the user can manipulate.</p>
-                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/computer_graphics">View</Link></button>
+                                <h4 class="card_title">{project.name}</h4>
+                                <div class='filtersWrapper'>
+                                    {project.tags.map((tag, i)=> {return (<div class='tag' key={i}>{tag}</div>)})}
+                                </div>
+                                <p class="card_text">{project.description}</p>
                             </div>
-                        </div>
+                        </a>
                     </li>
-                    <li class="cards_item">
-                        <div data-aos="zoom-in-left" class="card">
-                            <img class="card_image" src="./Projects/IceClimber/ice.jpg"></img>
-                            <div class="card_content">
-                            <h4 class="card_title">Ice Climber</h4>
-                            <p class="card_text">Video game developed for the Gameboy Advance.</p>
-                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/ice_climber">View</Link></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cards_item">
-                        <div data-aos="zoom-in-left" class="card">
-                            <img class="card_image" src="./Projects/Glance/glance0.jpg"></img>
-                            <div class="card_content">
-                            <h4 class="card_title">Glance</h4>
-                            <p class="card_text">Smart product to keep users safe on their walk home.</p>
-                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/glance">View</Link></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cards_item">
-                        <div data-aos="zoom-in-left" class="card">
-                            <img class="card_image" src="./Projects/WMS/wms.jpg"></img>
-                            <div class="card_content">
-                            <h4 class="card_title">Where's My Stuff App</h4>
-                            <p class="card_text">Application to help users find their belongings after a natural disaster.</p>
-                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/wms">View</Link></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cards_item">
-                        <div data-aos="zoom-in-left" class="card">
-                            <img class="card_image" src="./Projects/Scarfboi/Scarfboi.jpg"></img>
-                            <div class="card_content">
-                            <h4 class="card_title">The Legend of Scarf Boi</h4>
-                            <p class="card_text">Video game about a boy who turns dreams into nightmares.</p>
-                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/scarfboi">View</Link></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cards_item">
-                        <div data-aos="zoom-in-left" class="card">
-                            <img class="card_image" src="./Projects/SpaceEx/SpaceEx.jpg"></img>
-                            <div class="card_content">
-                            <h4 class="card_title">SpaceEx</h4>
-                            <p class="card_text">Interactive space helmet that kids wear to explore the universe. </p>
-                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/spaceEx">View</Link></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cards_item">
-                        <div data-aos="zoom-in-left" class="card">
-                            <img class="card_image" src="./Projects/Grown/Grown.jpg"></img>
-                            <div class="card_content">
-                            <h4 class="card_title">Grown Lamp Design</h4>
-                            <p class="card_text">Floor lamp design to light up any space.</p>
-                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/grown">View</Link></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cards_item">
-                        <div data-aos="zoom-in-left" class="card">
-                            <img class="card_image" src="./Projects/Web/web.jpg"></img>
-                            <div class="card_content">
-                            <h4 class="card_title">This Website</h4>
-                            <p class="card_text">Portfolio website coded from scratch in React</p>
-                            <button data-js="open" class="btn card_btn"><Link class="linkStlye" to="/thisWebsite">View</Link></button>
-                            </div>
-                        </div>
-                    </li>
+                    );})}
                 </ul>
-                
         </div> 
-    )
-}) 
-export default Projects;
+    )}
+}

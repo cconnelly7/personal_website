@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import $ from 'jquery';
+import useDarkMode from 'use-dark-mode';
 
 class HomeScreen extends React.Component {
     render() {

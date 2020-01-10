@@ -48,10 +48,7 @@ function CompGraphics() {
             <br/>
             <br/>
             <p class='feats'>The series began by implementing  a cubic Neville and a Bezier curve and applying an animation of dots moving along the curve with uniform, centripetal, and chordal knot spacing.
-               The next feature I implemented was a circular arc implementation to visualize a Bezier curve rather than using a linear interpolation. The first arc segment begins at point
-               A and ends at the midpoint of BC. Likewise, the second arc segment begins as the midpoint of BC and ends at point D. In order to create a smooth curve, the arcs endpoint must
-                be tangent to BC. Law of cosine was used to find the missing angle in the triangle ABMidpoint. Knowing this angle, law of sine could be used to find the radius of the arc
-                 segment. Lastly, this information could be used to find the center point of the arc segment. If the user presses “e,” they can toggle the line segments used in finding
+               The next feature I implemented was a circular arc implementation to visualize a Bezier curve rather than using a linear interpolation. If the user presses “e,” they can toggle the line segments used in finding
                   the radius and center coordinates. I then created a way to visualize how the Bezier curve gets constructed through the underlying liner interpolation function. It shows how the Bezier curve is a series of straight
              lines rather than a smooth curve. Also shown by this view are the intermediate curves created by the Bezier curve between ABC and BCD. These curves get combined to create the final Bezier curve.
             </p>
@@ -69,7 +66,7 @@ function CompGraphics() {
             In the next part of this series, I created a runner that followed a path that could be manipulated by the user. I first found the acceleration vector between the subdivision points
              of some control points. Next, I used the acceleration vectors to generate a curve along the floor. I used this as my footpath. To make the feet move, I counted the frames and moved the
               feet in cycles of 18 frames. I made legs with knees and calculated the knee points by using the foot location, forward direction, and hip location. I added a multiplier to the knee
-               to vary how much it bends while it is moving. This was just to make it prettier. I added hips that tilt based on the cross product of the acceleration vector and forward direction.
+               to vary how much it bends while it is moving. This was to make the walking animation appear more natural. I added hips that tilt based on the cross product of the acceleration vector and forward direction.
                 I used a similar method to calculate the shoulders, as well as to add bending arms. The feet move up and down as the runner is taking steps.
             </p>
             <br/>

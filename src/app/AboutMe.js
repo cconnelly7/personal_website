@@ -5,7 +5,7 @@ const AboutMe = React.forwardRef((props, ref)=>{
 
     return (
         <div>
-        <div className='box2' ref={ref}>
+        <div className='box2 color' ref={ref}>
             <div className='content'>
                 <div data-aos='fade-in' className='aboutMe'>About Me</div>
                 <div className='whiteSpace'></div>

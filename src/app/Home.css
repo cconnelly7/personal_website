@@ -1,4 +1,4 @@
-.box {
+body.light-mode .box {
   margin: 0;
   display: flex;
   justify-content: flex-start;
@@ -21,6 +21,19 @@
   height: 100vh;
   background-image: url('./Assets/websitePic.1.jpg');
   background-position:60% 50%;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+body.dark-mode .box {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./Assets/websitePic.0.dark.jpg');
+  background-position:50% 50%;
   background-repeat:no-repeat;
   background-size: cover;
 }

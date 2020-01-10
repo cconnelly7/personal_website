@@ -9,6 +9,12 @@
     justify-content: center;
     flex-direction: column;
 }
+body.dark-mode .color {
+  background: #121313;
+}
+body.light-mode .color {
+  background: #e8ecef;
+}
 
 .content {
     display: flex;
