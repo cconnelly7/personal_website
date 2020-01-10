@@ -12,7 +12,7 @@ const Skills = React.forwardRef((props, ref)=>{
             </div>
             <div className='moreSpace'></div>
 
-            <ul class="timeline">
+            <ul class="timeline timelineColor">
                 <li>
                     <div class="direction-r">
                         <div class="flag-wrapper" >

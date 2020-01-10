@@ -8,7 +8,6 @@ import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
 import $ from 'jquery';
-import DarkModeToggle from '../App';
 
 class Main extends React.Component {
     render () {
