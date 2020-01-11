@@ -15,15 +15,16 @@
 /* CIRCLE WITH PIC */
 .circleBase {
   border-radius: 50%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .type1 {
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
   width: 90%;
   padding-top: 90%;
+  margin-top: -20px;
   position: relative;
   background-image: url('./Assets/profPic.jpg');
   background-position:50% 50%;
@@ -47,7 +48,7 @@ body.dark-mode .nameColor {
 .job {
   font-size: 14px;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
   font-weight: 200;
   text-align: center;
   color: black;
@@ -159,20 +160,20 @@ body.dark-mode .bttnColor:hover {
   width: 100%;
   min-height: 100vh;
 }
-body.dark-mode .color {
+/* body.dark-mode .color {
   background: #121313;
 }
 body.light-mode .color {
   background: #e8ecef;
-}
+} */
 
 .s-layout__content {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 90%;
   margin-left: 4em;
   overflow-x: hidden;
+  float: right;
 }
 
 /* Sidebar */
@@ -237,7 +238,7 @@ body.dark-mode .colors {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 4em;
+  height: 3em;
 }
 
 .s-sidebar__nav-link em {
@@ -254,7 +255,7 @@ body.light-mode .s-sidebar__nav-link > i {
   display: inline-block;
   width: 4em;
   height: 4em;
-  color: #d1d5d9;
+  color: #2b2c2c;
 }
 body.dark-mode .s-sidebar__nav-link > i {
   position: absolute;
@@ -263,7 +264,7 @@ body.dark-mode .s-sidebar__nav-link > i {
   display: inline-block;
   width: 4em;
   height: 4em;
-  color: #2b2c2c;
+  color: rgb(107, 107, 107);
 }
 
 .s-sidebar__nav-link > i::before {
@@ -280,6 +281,7 @@ body.dark-mode .s-sidebar__nav-link > i {
 }
 
 /* Mobile First */
+
 @media (min-width: 42em) {
 
   .s-layout__content {
@@ -303,6 +305,7 @@ body.dark-mode .s-sidebar__nav-link > i {
   
 }
 
+
 @media (min-width: 68em) {
   .s-sidebar__nav .wrapper{
     visibility: show;
@@ -318,9 +321,13 @@ body.dark-mode .s-sidebar__nav-link > i {
     width: 15em;
   }
 
-  .s-sidebar__nav-link > i {
+  body.light-mode .s-sidebar__nav-link > i {
     color: #d1d5d9;
   }
+  body.dark-mode .s-sidebar__nav-link > i {
+    color: #2b2c2c;
+  }
 }
+
 
 

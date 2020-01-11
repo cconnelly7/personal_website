@@ -1,45 +1,22 @@
 import React from 'react';
 import './Home.css';
-import $ from 'jquery';
-import useDarkMode from 'use-dark-mode';
 
 class HomeScreen extends React.Component {
     render() {
-        setInterval(function() {
-            $('h2').fadeOut(500, function() {
-                
-                var $this = $(this);
-                $this.text($this.text() == 'I am a' ? 'Hello!' : 'I am a');  
-                $this.toggleClass('header fade-up header fade-up1');         
-                $this.fadeIn(500);
-            });
-            $('h3').fadeOut(500, function() {
-                var $this = $(this);
-                $this.text($this.text() == 'Software Engineer' ? 'I\'m Chianne' : 'Software Engineer');   
-                $this.toggleClass('header fade-up header fade-up1');     
-                $this.fadeIn(500);
-            });
-            $("#webPic").fadeOut(500, function() {
-                var $this = $(this);
-                $this.toggleClass('box box0');     
-                $this.fadeIn(500);
-            });
-
-        }, 4500);
         return (
             <div>
-                <p id="webPic" className='box' ref={this.props.myref}>
-                    <h2 className="header fade-up">Hello!</h2>
-                    <h3 className="header fade-up">I'm Chianne</h3>
-                </p> 
+                <div className='homeImgWrapper'>
+                    <img id="webPic" className='box0' src='http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif'></img> 
+                        <h2 className="header fade-up1">I am a<br/>Software Engineer</h2>
+                    <img id="webPic" className='box' src='http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif'></img> 
+                        <h2 className="header fade-up">Hello!<br/>I'm Chianne</h2>
+                </div>
                 <div className='extraSpace'></div>
-            </div> 
+            </div>
         )
     }
 }
     
 
 
-export default React.forwardRef((props, ref) => <HomeScreen 
-  myref={ref} {...props}
-/>);
+export default React.forwardRef((props, ref) => <HomeScreen/>);

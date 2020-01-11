@@ -37,10 +37,10 @@ function ScarfBoi() {
     return(
       <div>
         <ScrollToTopOnMount />
-        <div class="projPic">
+        <div class="projPic headerColor">
           <h4 class='projHeader'>The Legend of Scarf Boi</h4>
         </div>
-        <div class="projBg">
+        <div class="projBg color">
           <div class="projContent">
             <img class="banner" src="./Projects/Scarfboi/ScarfBoiBanner.png"></img>
             <h4 class='sectionHeader'>Overview</h4>

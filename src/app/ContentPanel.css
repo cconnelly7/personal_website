@@ -184,6 +184,12 @@ body.dark-mode .downloadBtn {
   font-size: 20px;
 }
 
+
+
+
+
+/* TOGGLE */
+
 .toggle-control {
     position: relative;
     padding: 0 4px;
@@ -205,42 +211,99 @@ input[type='checkbox'].dmcheck {
 }
   
 .dmcheck:checked + label {
-    left: 30px;
+  left: 30px;
 }
 
 .dmcheck:focus-visible {
-    outline: solid 2px white;
+  outline: solid 2px white;
 }
 
 .dmcheck + label {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    position: absolute;
-    left: 2px;
-    background: #fff;
-    opacity: 0.9;
-    background-color: #f6f6f6;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  left: 2px;
+  background: #fff;
+  opacity: 0.9;
+  background-color: #f6f6f6;
 }
 .dark-mode-toggle {
-    display: flex;
-    margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
-.dark-mode-toggle > button {
-    font-size: 1.2em;
-    background: none;
-    border: none;
-    color: #ffe600;
-    cursor: pointer;
-    transition: color 0.3s ease;
+
+body.light-mode .toggleContainer > button {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: yellow;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
-.dark-mode-toggle:last-child {
-    color: #666;
+body.dark-mode .toggleContainer > button {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: yellow;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
-  
-.dark-mode-toggle:focus {
-    outline: none;
+
+body.light-mode .toggleContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(#39598A, #79D7ED);
+  width: 5rem;
+  height: 2rem;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 1px solid  rgb(70, 70, 70);
+  font-size: 0.5rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+body.dark-mode .toggleContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(#091236, #1E215D);
+  width: 5rem;
+  height: 2rem;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 1px solid rgb(107, 107, 107);
+  font-size: 0.5rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+body.light-mode .toggImg {
+  width: 1.7rem;
+  height: 1.7rem;
+  transition: all 0.3s linear;
+}
+body.light-mode .toggImg:first-child {
+  transform: translateY(-10px);
+}
+body.light-mode .toggImg:last-child {
+  transform: translateY(-100px);
+}
+body.dark-mode .toggImg {
+  width: 1.7rem;
+  height: 1.7rem;
+  transition: all 0.3s linear;
+}
+body.dark-mode .toggImg:first-child {
+  transform: translateY(100px);
+}
+body.dark-mode .toggImg:last-child {
+  transform: translateY(-10px);
 }

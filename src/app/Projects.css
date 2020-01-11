@@ -133,6 +133,7 @@ body.light-mode .card {
     width:100%;
     flex-direction: column;
     overflow: hidden;
+    cursor: pointer;
 }
 body.dark-mode .card {
   background-color: #1e2020;

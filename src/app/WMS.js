@@ -37,10 +37,10 @@ function WMS() {
     return(
       <div>
         <ScrollToTopOnMount />
-        <div class="projPic">
+        <div class="projPic headerColor">
           <h4 class='projHeader'>Where's My Stuff App</h4>
         </div>
-        <div class="projBg">
+        <div class="projBg color">
           <div class="projContent">
             <img class="banner" src="./Projects/WMS/wmsBanner.png"></img>
             <h4 class='sectionHeader'>Overview</h4>

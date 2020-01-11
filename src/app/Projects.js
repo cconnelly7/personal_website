@@ -1,71 +1,67 @@
 import React, {Component} from 'react';
-import $ from 'jquery';
 import './Projects.css';
-import {
-    BrowserRouter as Router,
-    Link
-  } from "react-router-dom";
+import DarkModeStatus from './DarkModeStatus';
 
   export default class Projects extends Component {
     constructor(props) {
         super(props);
-        this.filters = ['Unity', 'Firebase', 'Web', 'Android', 'Java', 'C#', 'React', 'HTML/CSS/JS', 'Android SDK', 'clear'];
+        this.filters = ['Firebase', 'Web', 'Android', 'Java', 'C#', 'Unity', 'Arduino', 'C++', 'C ', 'GBA', 'state machine', 'game AI', 'jQuery', 'React', 'HTML/CSS/JS', 'iterative design', 'ideation', 'rapid prototyping', 'Processing', 'Graphics Libraries', 'Delaunay Algorithm', 'clear'];
         this.projects = [
           {
             name: 'Computer Graphics Series',
-            tags: ['React', 'HTML/CSS/JS', 'Web/Android/iOS', 'Firebase'],
+            tags: ['Processing', 'Graphics Libraries', 'Delaunay Algorithm', 'Java'],
             link: '/computer_graphics',
             description: 'Animated shapes and structures that the user can manipulate.',
             style: "./Projects/ComputerGraphics/Walker.jpg",
           },
           {
             name: 'Ice Climber',
-            tags: ['Android SDK', 'Java', 'Android'],
+            tags: ['GBA', 'C ', 'state machine'],
             link: '/ice_climber',
             description: 'Video game developed for the Gameboy Advance.',
             style: "./Projects/IceClimber/ice.jpg",
           },
           {
             name: 'Glance',
-            tags: ['Corona SDK', 'Lua', 'Android'],
+            tags: ['Arduino', 'C++', 'state machine'],
             link: '/glance',
             description: 'Smart product to keep users safe on their walk home.',
             style: "./Projects/Glance/glance0.jpg",
           },
           {
             name: 'Where\'s My Stuff App',
-            tags: ['Unity', 'C#', 'Android', 'Firebase'],
+            tags: ['Android', 'Java', 'Firebase'],
             link: '/wms',
             description: 'Application to help users find their belongings after a natural disaster.',
             style: "./Projects/WMS/wms.jpg",
           },
           {
             name: 'The Legend of Scarf Boi',
-            tags: ['Unity', 'C#', 'Oculus'],
+            tags: ['Unity', 'C#', 'state machine', 'game AI'],
             link: '/scarfboi',
             description: 'Video game about a boy who turns dreams into nightmares.',
             style: "./Projects/Scarfboi/Scarfboi.jpg",
           },
           {
             name: 'SpaceEx',
-            tags: ['Android SDK', 'Java', 'Android', 'Firebase'],
+            tags: ['iterative design','rapid prototyping', 'ideation'],
             link: '/spaceEx',
             description: 'Interactive space helmet that kids wear to explore the universe.',
             style: "./Projects/SpaceEx/SpaceEx.jpg",
           },
           {
             name: 'Grown Lamp Design',
-            tags: ['Unity', 'C#', 'Android'],
+            tags: ['iterative design', 'rapid prototyping',  'ideation'],
             link: '/grown',
             description: 'Floor lamp design to light up any space.',
             style: "./Projects/Grown/Grown.jpg",
           },
           {
             name: 'This Website',
-            tags: ['React', 'HTML/CSS/JS', 'Web'],
+            tags: ['React', 'HTML/CSS/JS', 'Web', 'jQuery'],
             link: '/thisWebsite',
             description: 'Built this website from scratch in React',
-            style: "./Projects/Web/web.jpg",
+            style: "./Projects/Web/web.png",
           }
         ];
         this.state = {filter: 'clear', filteredProjects: this.projects};
@@ -125,6 +121,9 @@ import {
                     </li>
                     );})}
                 </ul>
+            <div className='moreSpace'></div>
+            <div className='moreSpace'></div>
+            <div className='moreSpace'></div>
         </div> 
     )}
 }

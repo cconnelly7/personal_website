@@ -1,5 +1,6 @@
 import React from 'react';
 import './Main.css';
+import AOS from 'aos';
 import ContentPanel from './ContentPanel';
 import HomeScreen from './Home';
 import AboutMe from './AboutMe';
@@ -72,7 +73,7 @@ class Main extends React.Component {
 					if (target.length) {
 						$('html,body').animate({
 							scrollTop: target.offset().top
-						}, 700);
+						}, 1);
 						return false;
 					}
 				}
@@ -80,11 +81,10 @@ class Main extends React.Component {
         });
 
         return (
-            <div class="s-layout color">
-                <div class="s-layout__sidebar color">
+            <div class="s-layout">
+                <div class="s-layout__sidebar">
                 <nav class="s-sidebar__nav colors" id="prod-menu">
                     <ul>
-                    <DarkModeToggle />
                         <div class="wrapper">
                             <div className="circleBase type1" id="profPic"></div>
                             <h1 className="name nameColor" id="name">Chianne Connelly</h1>
@@ -120,32 +120,35 @@ class Main extends React.Component {
                             <i class="fa fa-address-book"></i><button className="bttn after-from-center bttnColor">Contact</button>
                         </a>
                         </li>
+                        <li>
+                            <DarkModeToggle class="s-sidebar__nav-link" />
+                        </li>
                     </ul>
                 </nav>
                 </div>
 
                 <div className='s-layout__content color'>
-                        <ContentPanel >		
-                            <section id="home">	
-                                <HomeScreen />
-                            </section>
-                            <section id="about">	
-                                <AboutMe/>
-                            </section>
-                            <section id="skills">	
-                                <Skills/>
-                            </section>
-                            <section id="projects">	
-                                <Projects/>
-                            </section>
-                            <section id="resume">	
-                                <Resume/>
-                            </section>
-                            <section id="contact">	
-                                <Contact/>
-                            </section>
-                        </ContentPanel>
-                    </div>
+                    <ContentPanel >		
+                        <section id="home">	
+                            <HomeScreen />
+                        </section>
+                        <section id="about">	
+                            <AboutMe/>
+                        </section>
+                        <section id="skills">	
+                            <Skills/>
+                        </section>
+                        <section id="projects">	
+                            <Projects/>
+                        </section>
+                        <section id="resume">	
+                            <Resume/>
+                        </section>
+                        <section id="contact">	
+                            <Contact/>
+                        </section>
+                    </ContentPanel>
+                </div>
             </div>
         )
     }

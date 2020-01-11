@@ -1,3 +1,9 @@
 .App {
   text-align: center;
 }
+body.light-mode .colors {
+  background: #d1d5d9;
+}
+body.dark-mode .colors {
+  background: #2b2c2c;
+}

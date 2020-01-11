@@ -8,14 +8,12 @@ const DarkModeToggle = () => {
 
   return (
     <div className="dark-mode-toggle">
-      <button type="button" onClick={darkMode.disable}>
-        ☀
-      </button>
-      <Toggle checked={darkMode.value} onChange={darkMode.toggle} />
-      <button type="button" onClick={darkMode.enable}>
-        ☾
-      </button>
+      <div class='toggleContainer' onClick={darkMode.toggle}>
+        <button type="button" class='toggImg' onClick={darkMode.disable}> ☀ </button>
+        <button type="button" class='toggImg' onClick={darkMode.enable}> ☾ </button>
+      </div>
     </div>
+
   );
 };
 

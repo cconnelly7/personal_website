@@ -22,7 +22,11 @@ const Skills = React.forwardRef((props, ref)=>{
                         <div class="desc textColor" data-aos="fade-left" >From working at NCR and through school at GT, I have gained skills 
                         with React, CSS, HTML, jQuery, and JavaScript. 
                             <br/>
-                            <img class='logo color' data-aos="fade-left" src='./logos/icon1.png'></img>
+                            <img class='logo2' data-aos="fade-left" src='./logos/react.png'></img>
+                            <img class='logo2' data-aos="fade-left" src='./logos/jquery.png'></img>
+                            <img class='logo2' data-aos="fade-left" src='./logos/html.png'></img>
+                            <img class='logo2' data-aos="fade-left" src='./logos/css.png'></img>
+                            <img class='logo2' data-aos="fade-left" src='./logos/javascript.png'></img>
                         </div>
                     </div>
                 </li>
@@ -36,7 +40,11 @@ const Skills = React.forwardRef((props, ref)=>{
                         <div class="desc textColor" data-aos="fade-right">This past semester I was working on a project in React Native for the Innovation Lab at NCR. 
                         While there, I built up my skills with JavaScript, redux, their APIs and services used, React Native, HTML, and CSS. I also worked on a project in React Native while working with Verizon.
                             <br/>
-                            <img class='logo' data-aos="fade-right" src='./logos/icon2.png'></img>
+                            <img class='logo2' data-aos="fade-right" src='./logos/react.png'></img>
+                            <img class='logo2' data-aos="fade-right" src='./logos/redux.png'></img>
+                            <img class='logo2' data-aos="fade-right" src='./logos/html.png'></img>
+                            <img class='logo2' data-aos="fade-right" src='./logos/css.png'></img>
+                            <img class='logo2' data-aos="fade-right" src='./logos/javascript.png'></img>
                         </div>
                     </div>
                 </li>

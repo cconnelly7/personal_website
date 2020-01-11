@@ -37,10 +37,10 @@ function IceClimber() {
     return(
       <div>
         <ScrollToTopOnMount />
-        <div class="projPic">
+        <div class="projPic headerColor">
           <h4 class='projHeader'>Ice Climber</h4>
         </div>
-        <div class="projBg">
+        <div class="projBg color">
           <div class="projContent">
             <img class="banner" src="./Projects/IceClimber/ic.banner.png"></img>
             <h4 class='sectionHeader'>Overview</h4>
