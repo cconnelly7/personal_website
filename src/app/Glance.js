@@ -57,7 +57,7 @@ function Glance() {
             <br/>
             <br/>
             <p class='feats'>
-            The user can chose to attach their device to a clip to put on their backpack or to a wristband. 
+            The user can chose to attach their device to a clip to put on their backpack or on a wristband. 
             </p>
             <br/>
             <br/>
