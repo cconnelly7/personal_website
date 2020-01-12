@@ -32,9 +32,8 @@ class App2 extends React.Component {
     return(
       <Router>
             <nav>
-              <div className="App colors">
-                <Link to="/"></Link>
-              </div>
+              <Router className="App colors" basename="/public" />
+              <Link to="/"></Link> 
             </nav>
             <Switch>
               <Route path="/computer_graphics">
