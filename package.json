@@ -1,8 +1,11 @@
 {
-  "homepage": "http://cconnelly7.github.io/personal_website",
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.12.1",
+    "node": "13.1.0"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -42,6 +45,12 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "@babel/core": "^7.8.0",
+    "@babel/preset-env": "^7.8.0",
+    "@babel/preset-react": "^7.8.0",
+    "babel-loader": "^8.0.6",
+    "gh-pages": "^2.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   }
 }
