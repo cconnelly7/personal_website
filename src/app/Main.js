@@ -1,6 +1,5 @@
 import React from 'react';
 import './Main.css';
-import AOS from 'aos';
 import ContentPanel from './ContentPanel';
 import HomeScreen from './Home';
 import AboutMe from './AboutMe';
@@ -121,7 +120,7 @@ class Main extends React.Component {
                         </a>
                         </li>
                         <li>
-                            <DarkModeToggle class="s-sidebar__nav-link" />
+                            <DarkModeToggle class="s-sidebar__nav-togg" />
                         </li>
                     </ul>
                 </nav>

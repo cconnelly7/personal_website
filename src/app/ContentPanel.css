@@ -46,7 +46,7 @@ body.light-mode .color {
 }
 
 body.light-mode .sectionTitle {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
   color: gray;
   align-self: flex-start;
@@ -55,7 +55,7 @@ body.light-mode .sectionTitle {
   margin: auto;
 }
 body.dark-mode .sectionTitle {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
   color: rgb(107, 107, 107);
   align-self: flex-start;
@@ -126,7 +126,9 @@ body.light-mode .rectangle {
     margin-top: 20px;
     display: flex;
     flex-basis: 30%;
-    min-width: 164px;
+    min-width: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
     height:100px;
     background-color: #f2f5f8;
     font-family: 'Anton', sans-serif;
@@ -140,7 +142,9 @@ body.dark-mode .rectangle {
   margin-top: 20px;
   display: flex;
   flex-basis: 30%;
-  min-width: 164px;
+  min-width: 220px;
+  padding-left: 20px;
+  padding-right: 20px;
   height:100px;
   background-color: #1e2020;
   font-family: 'Anton', sans-serif;
@@ -157,6 +161,7 @@ body.dark-mode .rectangle {
     justify-content: center;
     color: #67b771;
 }
+
 
 /* Resume stuff */
 body.light-mode .downloadBtn {

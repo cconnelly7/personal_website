@@ -240,6 +240,12 @@ body.dark-mode .colors {
   width: 100%;
   height: 3em;
 }
+.s-sidebar__nav-togg {
+  position: relative;
+  vertical-align: bottom;
+  width: 100%;
+  height: 3em;
+}
 
 .s-sidebar__nav-link em {
   position: absolute;

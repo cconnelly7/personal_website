@@ -93,7 +93,7 @@ import DarkModeStatus from './DarkModeStatus';
     return (
         <div className='box3 color' >
             <div className='content'>
-                <div data-aos='fade-in' className='sectionTitle'>Projects</div>
+                <div className='sectionTitle'>Projects</div>
                 <div className='whiteSpace'></div>
             </div>
 
