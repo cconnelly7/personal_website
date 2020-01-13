@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './Projects.css';
-import DarkModeStatus from './DarkModeStatus';
 
   export default class Projects extends Component {
     constructor(props) {
@@ -108,7 +107,7 @@ import DarkModeStatus from './DarkModeStatus';
                 <ul class="cards">
                     {this.state.filteredProjects.map((project, i) => {return (
                         <li class="cards_item">
-                        <a href={project.link} key={i} data-aos="zoom-in-left" class="card">
+                        <a href={project.link} key={i} class="card">
                             <img class="card_image" src={project.style}></img>
                             <div class="card_content">
                                 <h4 class="card_title">{project.name}</h4>
