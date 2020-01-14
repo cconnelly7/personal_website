@@ -59,7 +59,7 @@ import './Projects.css';
             name: 'This Website',
             tags: ['React', 'HTML/CSS/JS', 'Web', 'jQuery'],
             link: '/thisWebsite',
-            description: 'Built this website from scratch in React',
+            description: 'Website built from scratch in React.',
             style: "./Projects/Web/web.png",
           }
         ];

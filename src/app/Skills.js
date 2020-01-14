@@ -43,7 +43,7 @@ const Skills = React.forwardRef((props, ref)=>{
                         </div>
                         <ScrollAnimation animateIn="bounceInLeft">
                         <div class="desc textColor">This past semester I was working on a project in React Native for the Innovation Lab at NCR. 
-                        While there, I built up my skills with JavaScript, redux, their APIs and services used, React Native, HTML, and CSS. I also worked on a project in React Native while working with Verizon.
+                        While there, I built up my knowledge with their APIs and services used, JavaScript, redux, React Native, HTML, and CSS. I also worked on a project in React Native while working with Verizon.
                             <br/>
                             <img class='logo2' src='./logos/react.png'></img>
                             <img class='logo2' src='./logos/redux.png'></img>
@@ -78,7 +78,7 @@ const Skills = React.forwardRef((props, ref)=>{
                             <span class="flag textColor">Android/Java</span>
                         </div>
                         <ScrollAnimation animateIn="bounceInLeft">
-                        <div class="desc textColor">Java was my first computer language I learned indepth and I have worked on projects in Android Studio for
+                        <div class="desc textColor">Java was my first computer language I learned in-depth and I have worked on projects in Android Studio for
                         hackathons, class projects, and during my time with Verizon. This is where I began gaining skills with Java as an Object Oriented language and with basic application development practices.
                             <br/>
                             <img class='logo3' src='./logos/android.png'></img>
@@ -95,7 +95,7 @@ const Skills = React.forwardRef((props, ref)=>{
                             <span class="flag textColor">Others</span>
                         </div>
                         <ScrollAnimation animateIn="bounceInRight">
-                        <div class="desc textColor"> During my time in school and working both at Verizon and NCR I have become familiar 
+                        <div class="desc textColor"> During my time in school and working both at Verizon and NCR, I have become familiar 
                         with agile practices, SCRUM, JIRA, Bitbucket, Github, Git, and other development tools.
                             <br/>
                             <img class='logo3' src='./logos/github.png'></img>

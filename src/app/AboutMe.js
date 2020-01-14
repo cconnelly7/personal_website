@@ -16,7 +16,7 @@ const AboutMe = React.forwardRef((props, ref)=>{
                 <div className='text'>
                     <ScrollAnimation animateIn="flipInY">
                         I am Chianne Connelly. I just graduated from Georgia Tech and began my career as
-                        a Software Engineer. Check out this video to learn more!
+                        a software engineer. Check out this video to learn more!
                     </ScrollAnimation>
                 </div>
                 <div className="wrapper">

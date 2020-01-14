@@ -15,8 +15,8 @@ const Contact = React.forwardRef((props, ref)=>{
 
             <ScrollAnimation animateIn="flipInY">
             <div className='content'>
-                <div className='squarePhone inline-photo show-on-scroll'></div>
-                <div className='rectangle inline-photo show-on-scroll'>(480) 467 - 9108 </div>
+                <div className='squarePhone'></div>
+                <div className='rectangle'><a className='email' href = "tel:480-467-9108">(480) 467 - 9108</a></div>
             </div>
             <div className='content'>
                 <div className='squareEmail'></div>
