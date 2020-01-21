@@ -1,6 +1,6 @@
 import React from 'react';
-import './ContentPanel.css';
-import './Skills.css';
+import './css/ContentPanel.css';
+import './css/Skills.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Skills = React.forwardRef((props, ref)=>{

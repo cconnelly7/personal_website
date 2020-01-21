@@ -26,7 +26,7 @@
   padding-top: 90%;
   margin-top: -20px;
   position: relative;
-  background-image: url('./Assets/profPic.jpg');
+  background-image: url('../Assets/profPic.jpg');
   background-position:50% 50%;
   background-repeat:no-repeat;
   background-size: cover;
@@ -279,12 +279,6 @@ body.dark-mode .s-sidebar__nav-link > i {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.s-sidebar__nav:hover,
-.s-sidebar__nav:focus,
-.s-sidebar__trigger:hover + .s-sidebar__nav,
-.s-sidebar__trigger:focus + .s-sidebar__nav {
-  width: 15em;
-}
 
 /* TOGGLE */
 
@@ -407,13 +401,6 @@ body.dark-mode .darkButton {
   .s-sidebar__nav {
     width: 4em;
     left: 0;
-  }
-  
-  .s-sidebar__nav:hover,
-  .s-sidebar__nav:focus,
-  .s-sidebar__trigger:hover + .s-sidebar__nav,
-  .s-sidebar__trigger:focus + .s-sidebar__nav {
-    width: 15em;
   }
   
 }

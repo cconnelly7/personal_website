@@ -1,5 +1,5 @@
 import React from 'react';
-import './Project.css';
+import './css/Project.css';
 import $ from 'jquery';
 
 $(function(){
@@ -63,6 +63,7 @@ function IceClimber() {
             <h4 class='sectionHeader'>Features/Tech Used</h4>
             <p class='feats'>Coding was done in <div className='emphasize'>C</div>. Concepts such as a <div className='emphasize'>state machine</div>, <div className='emphasize'>collision detection</div>, <div className='emphasize'>collision maps</div>, and <div className='emphasize'>DMA</div> were applied.
             Special topics such as <div className='emphasize'>pallet swapping </div>and <div className='emphasize'>alpha blending</div> were implemented. 
+            The source code can be found <a href="https://github.com/cconnelly7/Ice-Climber" target="_blank">here</a>.
             </p>
             <div class='extraSpace'></div>
           </div>

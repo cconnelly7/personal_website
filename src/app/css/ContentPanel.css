@@ -86,7 +86,7 @@ body.light-mode .squareEmail {
     height: 100px;
     width: 100px;
     background-color: #d1d5d9;
-    background-image: url('./Assets/email.png');
+    background-image: url('../Assets/email.png');
     background-position:50% 50%;
     background-repeat:no-repeat;
     background-size: 70%;
@@ -96,7 +96,7 @@ body.dark-mode .squareEmail {
   height: 100px;
   width: 100px;
   background-color: #2b2c2c;
-  background-image: url('./Assets/email.png');
+  background-image: url('../Assets/email.png');
   background-position:50% 50%;
   background-repeat:no-repeat;
   background-size: 70%;
@@ -106,7 +106,7 @@ body.light-mode .squarePhone {
     height: 100px;
     width: 100px;
     background-color: #d1d5d9;
-    background-image: url('./Assets/phone.png');
+    background-image: url('../Assets/phone.png');
     background-position:50% 50%;
     background-repeat:no-repeat;
     background-size: 50%;
@@ -116,7 +116,7 @@ body.dark-mode .squarePhone {
   height: 100px;
   width: 100px;
   background-color: #2b2c2c;
-  background-image: url('./Assets/phone.png');
+  background-image: url('../Assets/phone.png');
   background-position:50% 50%;
   background-repeat:no-repeat;
   background-size: 50%;

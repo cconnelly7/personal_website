@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Projects.css';
+import './css/Projects.css';
 
   export default class Projects extends Component {
     constructor(props) {
@@ -42,14 +42,14 @@ import './Projects.css';
             style: "./Projects/Scarfboi/Scarfboi.jpg",
           },
           {
-            name: 'SpaceEx',
+            name: 'Space Explorer',
             tags: ['iterative design','rapid prototyping', 'ideation'],
             link: '/spaceEx',
             description: 'Interactive space helmet that kids wear to explore the universe.',
             style: "./Projects/SpaceEx/SpaceEx.jpg",
           },
           {
-            name: 'Grown Lamp Design',
+            name: 'Unfurl Lamp Design',
             tags: ['iterative design', 'rapid prototyping',  'ideation'],
             link: '/grown',
             description: 'Floor lamp design to light up any space.',

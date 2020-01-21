@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutMe.css';
+import './css/AboutMe.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const AboutMe = React.forwardRef((props, ref)=>{

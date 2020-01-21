@@ -1,5 +1,5 @@
 import React from 'react';
-import './ContentPanel.css';
+import './css/ContentPanel.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Contact = React.forwardRef((props, ref)=>{

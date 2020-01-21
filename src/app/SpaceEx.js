@@ -1,5 +1,5 @@
 import React from 'react';
-import './Project.css';
+import './css/Project.css';
 import $ from 'jquery';
 
 $(function(){
@@ -38,7 +38,7 @@ function SpaceEx() {
       <div>
         <ScrollToTopOnMount />
         <div class="projPic headerColor">
-          <h4 class='projHeader'>SpaceEx</h4>
+          <h4 class='projHeader'>Space Explorer</h4>
         </div>
         <div class="projBg color">
           <div class="projContent">
@@ -61,7 +61,7 @@ function SpaceEx() {
               <img class="image4" src="./Projects/SpaceEx/SpaceEx.2.png"></img>
             </div>
             <h4 class='sectionHeader'>Features/Tech Used</h4>
-            <p class='feats'>SpaceEx is a AR toy designed for children. If it were built, it would need to include two plastic screens with an OLED screen sandwiched between them, a processor such as the Qualcomm snapdragon, and a USBC port for charging.
+            <p class='feats'>Space Explorer is a AR toy designed for children. If it were built, it would need to include two plastic screens with an OLED screen sandwiched between them, a processor such as the Qualcomm snapdragon, and a USBC port for charging.
             </p>
             <div class='extraSpace'></div>
           </div>

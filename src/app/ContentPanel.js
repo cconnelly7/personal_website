@@ -1,5 +1,5 @@
 import React from 'react';
-import './ContentPanel.css';
+import './css/ContentPanel.css';
 
 class ContentPanel extends React.Component {
 

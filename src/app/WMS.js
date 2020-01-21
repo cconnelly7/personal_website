@@ -1,5 +1,5 @@
 import React from 'react';
-import './Project.css';
+import './css/Project.css';
 import $ from 'jquery';
 
 $(function(){
@@ -63,7 +63,8 @@ function WMS() {
             </div>
             <h4 class='sectionHeader'>Features/Tech Used</h4>
             <p class='feats'>Implemented <div className='emphasize'>Google Maps Platform services </div> such as <div className='emphasize'>Time Zone API </div> 
-            and <div className='emphasize'>Maps SDK for Android</div>. Used <div className='emphasize'>Firebase</div> and <div className='emphasize'>JSON</div> to store users and other objects. Developed using <div className='emphasize'>Java</div> and <div className='emphasize'>Android Studio</div>. 
+            and <div className='emphasize'>Maps SDK for Android</div>. Used <div className='emphasize'>Firebase</div> and <div className='emphasize'>JSON</div> to store users and other objects. Developed using <div className='emphasize'>Java</div> and <div className='emphasize'>Android Studio</div>.
+            The source code can be found <a href="https://github.com/mcw0805/wheres-my-stuff" target="_blank">here</a>. 
             </p>
             <div class='extraSpace'></div>
           </div>

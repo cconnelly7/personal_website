@@ -1,5 +1,5 @@
 import React from 'react';
-import './Project.css';
+import './css/Project.css';
 import $ from 'jquery';
 
 $(function(){
