@@ -28,7 +28,6 @@ const AboutMe = React.forwardRef((props, ref)=>{
             </div>
         </div> 
         <div className='extraSpace'></div>
-        <div className='extraSpace'></div>
         </div>
     )
 }) 
