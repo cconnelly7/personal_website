@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/Main.css';
+import '../css/Main.css';
 import ContentPanel from './ContentPanel';
 import HomeScreen from './Home';
 import AboutMe from './AboutMe';

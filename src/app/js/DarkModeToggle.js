@@ -1,7 +1,7 @@
 import React from 'react';
 import Toggle from './Toggle';
 import useDarkMode from 'use-dark-mode';
-import './css/Main.css'
+import '../css/Main.css'
 
 const DarkModeToggle = () => {
   const darkMode = useDarkMode(false);

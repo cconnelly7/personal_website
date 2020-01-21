@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/Main.css'
+import '../css/Main.css'
 
 const Toggle = ({ checked, onChange }) => (
   <span className="toggle-control">

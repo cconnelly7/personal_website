@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/ContentPanel.css';
+import '../css/ContentPanel.css';
 
 const Resume = React.forwardRef((props, ref)=>{
 

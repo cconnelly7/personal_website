@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Main from './app/Main';
+import Main from './app/js/Main';
 import 'aos/dist/aos.css';
 import {
   BrowserRouter as Router,
@@ -8,14 +8,14 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import CompGraphics from './app/CompGraphics';
-import IceClimber from './app/IceClimber';
-import Glance from './app/Glance';
-import Grown from './app/Grown';
-import WMS from './app/WMS';
-import ScarfBoi from './app/ScarfBoi';
-import SpaceEx from './app/SpaceEx';
-import Web from './app/Web';
+import CompGraphics from './app/js/CompGraphics';
+import IceClimber from './app/js/IceClimber';
+import Glance from './app/js/Glance';
+import Grown from './app/js/Grown';
+import WMS from './app/js/WMS';
+import ScarfBoi from './app/js/ScarfBoi';
+import SpaceEx from './app/js/SpaceEx';
+import Web from './app/js/Web';
 import AOS from 'aos';
 
 
