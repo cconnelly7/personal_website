@@ -4,7 +4,7 @@ import '../css/Projects.css';
   export default class Projects extends Component {
     constructor(props) {
         super(props);
-        this.filters = ['Firebase', 'Web', 'Android', 'Java', 'C#', 'Unity', 'Arduino', 'C++', 'C ', 'GBA', 'state machine', 'game AI', 'jQuery', 'React', 'HTML/CSS/JS', 'iterative design', 'ideation', 'rapid prototyping', 'Processing', 'Graphics Libraries', 'Delaunay Algorithm', 'clear'];
+        this.filters = ['Firebase', 'Web', 'Android', 'Java', 'Kotlin','C#', 'Unity', 'Arduino', 'C++', 'C ', 'GBA', 'state machine', 'game AI', 'jQuery', 'React', 'HTML/CSS/JS', 'iterative design', 'ideation', 'rapid prototyping', 'Processing', 'Graphics Libraries', 'Delaunay Algorithm', 'clear'];
         this.projects = [
           {
             name: 'Computer Graphics Series',
@@ -29,7 +29,7 @@ import '../css/Projects.css';
           },
           {
             name: 'Where\'s My Stuff App',
-            tags: ['Android', 'Java', 'Firebase'],
+            tags: ['Android', 'Java', 'Firebase', 'Kotlin'],
             link: '/wms',
             description: 'Application to help users find their belongings after a natural disaster.',
             style: "./Projects/WMS/wms.jpg",

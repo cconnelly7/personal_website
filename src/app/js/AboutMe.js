@@ -22,7 +22,7 @@ const AboutMe = React.forwardRef((props, ref)=>{
                 <div className="wrapper">
                     <div className="h_iframe">
                         <img className="ratio" src="http://placehold.it/16x9" />
-                        <iframe src="https://www.youtube.com/embed/Nm_f_44ZgLM" frameBorder="0" allowFullScreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/Nm_f_44ZgLM" frameBorder="0"></iframe>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/Project.css';
-import $ from 'jquery';
 import ScrollToTopOnMount from './ScrollToTopOnMount';
 
 function WMS() {
@@ -32,8 +31,7 @@ function WMS() {
               <img class="image4" src="./Projects/WMS/wms.3.png"></img>
             </div>
             <h4 class='sectionHeader'>Features/Tech Used</h4>
-            <p class='feats'>Implemented <div className='emphasize'>Google Maps Platform services </div> such as <div className='emphasize'>Time Zone API </div> 
-            and <div className='emphasize'>Maps SDK for Android</div>. Used <div className='emphasize'>Firebase</div> and <div className='emphasize'>JSON</div> to store users and other objects. Developed using <div className='emphasize'>Java</div> and <div className='emphasize'>Android Studio</div>.
+            <p class='feats'>Implemented <div className='emphasize'>Google Maps Platform services </div> such as <div className='emphasize'>Maps SDK for Android</div>. Used <div className='emphasize'>Firebase</div> and <div className='emphasize'>JSON</div> to store users and other objects. Developed using <div className='emphasize'>Java</div>, <div className='emphasize'>Android Studio</div>, and <div className='emphasize'>Kotlin</div>.
             The source code can be found <a href="https://github.com/mcw0805/wheres-my-stuff" target="_blank">here</a>. 
             </p>
             <div class='extraSpace'></div>

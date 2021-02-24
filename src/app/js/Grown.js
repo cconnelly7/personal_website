@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/Project.css';
-import $ from 'jquery';
 import ScrollToTopOnMount from './ScrollToTopOnMount';
  
 function Grown() {

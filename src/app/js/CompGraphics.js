@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/Project.css';
-import $ from 'jquery';
 import ScrollToTopOnMount from './ScrollToTopOnMount';
 
 function CompGraphics() {
@@ -59,7 +58,7 @@ function CompGraphics() {
             </div>
             <h4 class='sectionHeader'>Features/Tech Used</h4>
             <p class='feats'>Programming and graphics were done in <div className='emphasize'>Processing</div>, an open-source graphical library and IDE. Graphics interfaces such as <div className='emphasize'>OpenGL </div> 
-            and <div className='emphasize'>shaders</div> were used. The source code can be found in the following repositories: <a href="https://github.com/cconnelly7/Graphics-Part1" target="_blank">part 1</a>, <a href="https://github.com/cconnelly7/Graphics-Part2" target="_blank">part 2</a>, and <a href="https://github.com/cconnelly7/Graphics-Part3" target="_blank">part 3</a>
+            and <div className='emphasize'>shaders</div> were used. The source code can be found in the following repositories: <a href="https://github.com/cconnelly7/Graphics-Part1" target="_blank">part 1</a>, <a href="https://github.com/cconnelly7/Graphics-Part2" target="_blank">part 2</a>, and <a href="https://github.com/cconnelly7/Graphics-Part3" target="_blank">part 3</a>.
             </p>
             <div class='extraSpace'></div>
           </div>

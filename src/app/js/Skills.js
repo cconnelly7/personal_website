@@ -23,13 +23,13 @@ const Skills = React.forwardRef((props, ref)=>{
                         <ScrollAnimation animateIn="bounceInRight">
                             <div class="desc textColor">
                             From working at NCR and through school at GT, I have gained skills 
-                            with React, CSS, HTML, jQuery, and JavaScript. 
+                            with React, JavaScript, HTML, CSS, and Redux. 
                                 <br/>
                                 <img class='logo2' src='./logos/react.png'></img>
-                                <img class='logo2' src='./logos/jquery.png'></img>
+                                <img class='logo2' src='./logos/javascript.png'></img>
                                 <img class='logo2' src='./logos/html.png'></img>
                                 <img class='logo2' src='./logos/css.png'></img>
-                                <img class='logo2' src='./logos/javascript.png'></img>
+                                <img class='logo2' src='./logos/redux.png'></img>
                             </div>
                         </ScrollAnimation> 
                     </div>
@@ -39,17 +39,13 @@ const Skills = React.forwardRef((props, ref)=>{
                     <div class="direction-l">
                         <div class="flag-wrapper">
                             <span class="circ" ></span>
-                            <span class="flag textColor">App Dev/React Native</span>
+                            <span class="flag textColor">Frontend</span>
                         </div>
                         <ScrollAnimation animateIn="bounceInLeft">
-                        <div class="desc textColor">This past semester I was working on a project in React Native for the Innovation Lab at NCR. 
-                        While there, I built up my knowledge with their APIs and services used, JavaScript, redux, React Native, HTML, and CSS. I also worked on a project in React Native while working with Verizon.
+                        <div class="desc textColor">Frontend is my favorite type of development because it's creative 
+                        and technically challenging. It's very easy for me to figure things out when I can see them changing on the screen. 
                             <br/>
-                            <img class='logo2' src='./logos/react.png'></img>
-                            <img class='logo2' src='./logos/redux.png'></img>
-                            <img class='logo2' src='./logos/html.png'></img>
-                            <img class='logo2' src='./logos/css.png'></img>
-                            <img class='logo2' src='./logos/javascript.png'></img>
+                            
                         </div>
                         </ScrollAnimation>
                     </div>
@@ -59,13 +55,14 @@ const Skills = React.forwardRef((props, ref)=>{
                     <div class="direction-r">
                         <div class="flag-wrapper">
                             <span class="circ"></span>
-                            <span class="flag textColor">C#/Unity 3D</span>
+                            <span class="flag textColor">APIs/Backend</span>
                         </div>
                         <ScrollAnimation animateIn="bounceInRight">
-                        <div class="desc textColor"> From developing games with the Unity game engine, I have skills with game AI, state machines, player animations, C#, and game design principles. 
+                        <div class="desc textColor"> From working with NCR I have experience writing API calls, creating new endpoints, and optimizing databases. I have worked with SQL, C#, and Redis.
                             <br/>
-                            <img class='logo2' src='./logos/Csharp_Logo.png'></img>
-                            <img class='logo2' src='./logos/unity.png'></img>
+                            <img class='logo3' src='./logos/sql.png'></img>
+                            <img class='logo3' src='./logos/csharp.png'></img>
+                            <img class='logo3' src='./logos/redis.png'></img>
                         </div>
                         </ScrollAnimation>
                     </div>
@@ -110,11 +107,28 @@ const Skills = React.forwardRef((props, ref)=>{
                     <div class="direction-l">
                         <div class="flag-wrapper">
                             <span class="circ"></span>
-                            <span class="flag textColor">Design</span>
+                            <span class="flag textColor">Innovative Thinking</span>
                         </div>
                         <ScrollAnimation animateIn="bounceInLeft">
                         <div class="desc somePadding textColor">
-                            While studying Industrial Design at Georgia Tech I developed skills with ideation, brainstorming, rapid prototyping, research, and iterative design. 
+                            I spent some of my time with NCR working in the Software Innovation Lab. We were constantly thinking of new ways to
+                            use ML tools such as body tracking and computer vision to reshape digital banking.
+                            <br/>
+                            <img class='logo3' src='./logos/light.png'></img>
+                            <img class='logo3' src='./logos/brain.png'></img>
+                        </div>
+                        </ScrollAnimation>
+                    </div>
+                </li>
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="circ"></span>
+                            <span class="flag textColor">Design</span>
+                        </div>
+                        <ScrollAnimation animateIn="bounceInRight">
+                        <div class="desc somePadding textColor">
+                            While studying Industrial Design at Georgia Tech I developed skills with ideation, brainstorming, rapid prototyping, user research, and iterative design. 
                         </div>
                         </ScrollAnimation>
                     </div>

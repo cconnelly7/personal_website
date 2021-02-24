@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/Project.css';
-import $ from 'jquery';
 import ScrollToTopOnMount from './ScrollToTopOnMount';
 
 
@@ -20,7 +19,7 @@ function Web() {
             <br/>
             <div className="h_iframe">
               <img className="ratio" src="http://placehold.it/16x9" />
-              <iframe src="./index.html" frameBorder="0" allowFullScreen></iframe>
+              <iframe src="./index.html" frameBorder="0"></iframe>
             </div>
             <h4 class='sectionHeader'>Features/Tech Used</h4>
             <p class='feats'>This website was built from scratch in <div className='emphasize'>React</div> from Dec 2019 - Jan 2020 using <div className='emphasize'>HTML</div>, <div className='emphasize'>CSS</div>, <div className='emphasize'>JavaScript</div>, and <div className='emphasize'>jQuery</div>. 

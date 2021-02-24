@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/Project.css';
-import $ from 'jquery';
 import ScrollToTopOnMount from './ScrollToTopOnMount';
 
 function SpaceEx() {
@@ -23,7 +22,7 @@ function SpaceEx() {
             <br/>
             <div className="h_iframe">
               <img className="ratio" src="http://placehold.it/16x9" />
-              <iframe src="https://www.youtube.com/embed/ORrfclNMtQk" frameBorder="0" allowFullScreen></iframe>
+              <iframe src="https://www.youtube.com/embed/ORrfclNMtQk" frameBorder="0"></iframe>
             </div>
             <div class="imgContainer">
               <img class="image4" src="./Projects/SpaceEx/SpaceEx.0.png"></img>

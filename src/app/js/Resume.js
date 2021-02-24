@@ -11,9 +11,9 @@ const Resume = React.forwardRef((props, ref)=>{
                     <div className='whiteSpace'></div>
                 </div>
                 <div className='moreSpace'></div>
-                <iframe src="https://drive.google.com/file/d/164KZqI3Pk_GGUOFjTt2XIn7sUiUtROA-/preview" width="80%" height="60%"></iframe>
+                <iframe src="https://drive.google.com/file/d/15n_2zcVzuecoS3htqmBKfCpyZfqN6sy-/preview" width="80%" height="60%"></iframe>
                 <div className='moreSpace'></div>
-                <a href="2020ChianneConnellyResume.pdf" download>
+                <a href="ChianneConnellyResume.pdf" download>
                     <button class="downloadBtn"><i class="fa fa-download"></i> Download</button>
                 </a>
             </div>      

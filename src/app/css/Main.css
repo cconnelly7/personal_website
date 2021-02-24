@@ -344,7 +344,7 @@ input[type='checkbox'].dmcheck {
 }
 body.light-mode .lightButton {
   font-size: 1.6em;
-  margin-left: 20px;
+  margin-left: 19px;
   background: none;
   border: none;
   color: #ccb960;
@@ -353,7 +353,7 @@ body.light-mode .lightButton {
 }
 body.dark-mode .lightButton {
   font-size: 1.2em;
-  margin-left: 23px;
+  margin-left: 22px;
   background: none;
   border: none;
   color: gray;
@@ -362,7 +362,7 @@ body.dark-mode .lightButton {
 }
 body.light-mode .darkButton {
   font-size: 1.2em;
-  margin-left: 20px;
+  margin-left: 25px;
   background: none;
   border: none;
   color: gray;

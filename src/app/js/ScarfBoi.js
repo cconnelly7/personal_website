@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/Project.css';
-import $ from 'jquery';
 import ScrollToTopOnMount from './ScrollToTopOnMount';
  
 
@@ -23,7 +22,7 @@ function ScarfBoi() {
             <br/>
             <div className="h_iframe">
               <img className="ratio" src="http://placehold.it/16x9" />
-              <iframe src="https://www.youtube.com/embed/XM-Yt4_J-2Q" frameBorder="0" allowFullScreen></iframe>
+              <iframe src="https://www.youtube.com/embed/XM-Yt4_J-2Q" frameBorder="0"></iframe>
             </div>
             <br/>
             <br/>
