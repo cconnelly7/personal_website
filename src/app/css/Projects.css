@@ -24,6 +24,7 @@ body.light-mode .color {
     margin: auto;
 }
 .filter {
+  padding: 12px;
   font-weight: 400;
   color: gray;
 }

@@ -67,7 +67,6 @@ import '../css/Projects.css';
       }
     
       filter(word) {
-          console.log('in filter function with ' + word);
         if (word == 'clear' || word == this.state.filter) {
           this.setState({filteredProjects: this.projects, filter: 'clear'});
         } else {
